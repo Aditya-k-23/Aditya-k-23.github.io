@@ -81,7 +81,7 @@ export default function Portfolio() {
             </p>
             <div className="flex flex-wrap gap-4">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/aditya-s-kulkarni/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#0077B5] text-white px-4 py-2 rounded-full hover:bg-[#0077B5]/80 transition-colors flex items-center"
