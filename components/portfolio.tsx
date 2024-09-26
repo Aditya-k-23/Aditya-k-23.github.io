@@ -99,8 +99,9 @@ export default function Portfolio() {
                 GitHub
               </a>
               <a
-                href="/Aditya_PM_resume.pdf"
-                download="Aditya_PM_resume.pdf"
+                href="https://drive.google.com/file/d/1Yv9kS-6fqCKvLljJa_9MTBMWihW-SB6a/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-accent text-white px-4 py-2 rounded-full hover:bg-accent/80 transition-colors flex items-center"
               >
                 <FileText className="w-5 h-5 mr-2" />
