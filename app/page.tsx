@@ -1,4 +1,3 @@
-import { BlogPosts } from "app/components/posts";
 import Image from "next/image";
 
 export default function Page() {
@@ -12,8 +11,8 @@ export default function Page() {
           src="/adi.webp"
           alt="Aditya Profile Picture"
           className="relative rounded-full object-cover"
-          height={128}
-          width={128}
+          height={200}
+          width={200}
         />
         <p className="mb-4">
           {`I'm a computer science graduate from the `}
