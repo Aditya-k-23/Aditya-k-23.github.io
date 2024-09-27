@@ -9,7 +9,7 @@ const VideosPage = () => {
     { id: number; title: string; platform: string; url: string }[]
   >([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 4; // Number of items per page
+  const itemsPerPage = 2; // Number of items per page
 
   useEffect(() => {
     const getVideos = async () => {
@@ -20,15 +20,12 @@ const VideosPage = () => {
     getVideos();
   }, []);
 
-  // Calculate the items to display on the current page
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = videos.slice(indexOfFirstItem, indexOfLastItem);
 
-  // Calculate total pages
   const totalPages = Math.ceil(videos.length / itemsPerPage);
 
-  // Handle page change
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
