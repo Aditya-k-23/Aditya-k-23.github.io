@@ -4,6 +4,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaFilePdf,
+  FaOrcid,
 } from "react-icons/fa";
 import Link from "next/link";
 
@@ -17,6 +18,11 @@ const icons = [
     href: "https://github.com/Aditya-k-23",
     icon: <FaGithub style={{ fontSize: "2rem" }} />,
     label: "Github",
+  },
+  {
+    href: "https://orcid.org/0000-0002-1836-1651",
+    icon: <FaOrcid style={{ fontSize: "2rem" }} />,
+    label: "ORCID",
   },
   {
     href: "https://www.instagram.com/adis_kaleidoscope/",
