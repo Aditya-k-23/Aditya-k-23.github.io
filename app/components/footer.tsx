@@ -53,7 +53,7 @@ export default function Footer() {
             rel="noopener"
             aria-label={label}
           >
-            <div className="text-gray-400 hover:text-amber-100/80 transition duration-300 cursor-pointer">
+            <div className="text-gray-400 hover:text-black dark:hover:text-amber-100/80 transition duration-300 cursor-pointer">
               {icon}
             </div>
           </Link>
