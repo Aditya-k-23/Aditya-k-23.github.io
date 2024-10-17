@@ -7,15 +7,14 @@ const fetchPublications = async () => {
   return [
     {
       id: 1,
-      title:
-        "Literature Mapping: A Scaffolded, Scalable, Low-Overhead Research Experience",
-      journal: "SIGCSE 2025",
-      date: "January 12, 2025",
-      url: "Coming Soon!",
+      title: "Finding and Categorizing COVID-19 Papers in CS Education",
+      journal: "SIGCSE 2023",
+      date: "Mar 15, 2023",
+      url: "https://doi.org/10.1145/3545947.3576288",
       posterurl:
-        "https://drive.google.com/file/d/1rV9a_i3mU03xmOk_0Dj6ibeX-QBuJ1oW/view?usp=sharing",
+        "https://drive.google.com/file/d/1dMXvtjuDkpp9C6JiFXTr847ZRv6IkI8j/view?usp=sharing",
       abstract:
-        "There is a wealth of evidence that involving undergraduate students in research has positive impacts in a variety of areas, from representation and retention to outcomes and self-efficacy. However, developing and growing an undergraduate research program can be daunting, especially for institutions that do not have a large existing research enterprise. In this work, we detail a program that revolves around student-developed literature maps to help students gain the ability to read and assess research papers in a way that is accessible, robust, and requires relatively little faculty overhead. We further detail how this program has been run through 4 iterations, with a total of 47 students producing 5 posters or short papers, and 3 full papers. In this work, we provide our experiences using literature mapping projects to boot-strap an undergraduate research program and provide quantitative and qualitative analysis of the students who have participated. All of the materials, including sample spreadsheets, and scripts to generate LaTeX tables and figures are included for anyone wishing to undertake a literature mapping project of their own.",
+        "In the first 2 years following the outbreak of COVID-19, many papers have been published regarding the impacts and adaptations of the pandemic on computer science education. As a first step towards a systematic literature mapping, this study attempts to develop a process for searching and a categorization schema for papers. The goal of this project is to produce a literature map which will be used to provide an initial assessment of the state of research, as well as a framework for future research directions.  Limiting our search to papers published in the ACM Digital Library in the publications sponsored by SIGCSE, we first create and validate a query and inclusion/exclusion criteria for papers. Using a double evaluator model, we find high agreement with a Cohen's Kappa of 0.93, resulting in 42 papers across 6 conference proceedings. We further validate these findings by independent checking against all papers from SIGCSE2021 TS. We then develop categories across three dimensions: In activity: we find remote teaching, remote assessment, remote work, virtual events and general impact of pandemic. In measurement: we find grades, non-grade assessment, attendance/retention, affect/perception, and mental health. In population: we find K-12 students, university/college students, Educators, and the sub-categories of introductory/CS0/CS1 students, gender, and race. Double rater assessments initially produced a relatively low Kappa score of 0.58, but after protocol revision, and the production of additional categories, the kappa score was raised to a very high 0.94.",
     },
     {
       id: 2,
@@ -31,14 +30,15 @@ const fetchPublications = async () => {
     },
     {
       id: 3,
-      title: "Finding and Categorizing COVID-19 Papers in CS Education",
-      journal: "SIGCSE 2023",
-      date: "Mar 15, 2023",
-      url: "https://doi.org/10.1145/3545947.3576288",
+      title:
+        "Literature Mapping: A Scaffolded, Scalable, Low-Overhead Research Experience",
+      journal: "SIGCSE 2025",
+      date: "January 12, 2025",
+      url: "Coming Soon!",
       posterurl:
-        "https://drive.google.com/file/d/1dMXvtjuDkpp9C6JiFXTr847ZRv6IkI8j/view?usp=sharing",
+        "https://drive.google.com/file/d/1rV9a_i3mU03xmOk_0Dj6ibeX-QBuJ1oW/view?usp=sharing",
       abstract:
-        "In the first 2 years following the outbreak of COVID-19, many papers have been published regarding the impacts and adaptations of the pandemic on computer science education. As a first step towards a systematic literature mapping, this study attempts to develop a process for searching and a categorization schema for papers. The goal of this project is to produce a literature map which will be used to provide an initial assessment of the state of research, as well as a framework for future research directions.  Limiting our search to papers published in the ACM Digital Library in the publications sponsored by SIGCSE, we first create and validate a query and inclusion/exclusion criteria for papers. Using a double evaluator model, we find high agreement with a Cohen's Kappa of 0.93, resulting in 42 papers across 6 conference proceedings. We further validate these findings by independent checking against all papers from SIGCSE2021 TS. We then develop categories across three dimensions: In activity: we find remote teaching, remote assessment, remote work, virtual events and general impact of pandemic. In measurement: we find grades, non-grade assessment, attendance/retention, affect/perception, and mental health. In population: we find K-12 students, university/college students, Educators, and the sub-categories of introductory/CS0/CS1 students, gender, and race. Double rater assessments initially produced a relatively low Kappa score of 0.58, but after protocol revision, and the production of additional categories, the kappa score was raised to a very high 0.94.",
+        "There is a wealth of evidence that involving undergraduate students in research has positive impacts in a variety of areas, from representation and retention to outcomes and self-efficacy. However, developing and growing an undergraduate research program can be daunting, especially for institutions that do not have a large existing research enterprise. In this work, we detail a program that revolves around student-developed literature maps to help students gain the ability to read and assess research papers in a way that is accessible, robust, and requires relatively little faculty overhead. We further detail how this program has been run through 4 iterations, with a total of 47 students producing 5 posters or short papers, and 3 full papers. In this work, we provide our experiences using literature mapping projects to boot-strap an undergraduate research program and provide quantitative and qualitative analysis of the students who have participated. All of the materials, including sample spreadsheets, and scripts to generate LaTeX tables and figures are included for anyone wishing to undertake a literature mapping project of their own.",
     },
   ];
 };
