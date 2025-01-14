@@ -6,7 +6,8 @@ import { Navbar } from "./components/nav";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "./components/footer";
-import { baseUrl } from "./sitemap";
+
+let baseUrl = "https://adityakulkarni.me/";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
