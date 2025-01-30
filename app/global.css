@@ -39,7 +39,7 @@ html {
   margin-left: -1em;
   padding-right: 0.5em;
   width: 80%;
-  max-width: 700px;
+  max-width: 800px;
   cursor: pointer;
 }
 
@@ -148,7 +148,11 @@ table {
 }
 
 .page-title {
-  margin-bottom: 16px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--text-color);
 }
 
 .video-grid {
@@ -169,6 +173,7 @@ table {
 
 .video-card h3 {
   margin: 8px 0;
+  font-size: large;
 }
 
 .video-card p {
@@ -233,6 +238,7 @@ table {
 
 .publication-card h3 {
   margin: 8px 0;
+  font-size: large;
 }
 
 .publication-card p {
@@ -246,4 +252,46 @@ table {
 
 .publication-card a:hover {
   text-decoration: underline;
+}
+
+.awards-container {
+  max-width: 800px;
+  gap: 16px;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.awards-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.award-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  width: 100%; /* Ensure the card takes full width of the grid cell */
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.award-item:hover {
+  transform: scale(var(--hover-scale));
+}
+
+.award-name {
+  font-size: large;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.award-details,
+.award-description,
+.award-value,
+.award-category {
+  margin: 5px 0;
+  color: #666;
 }

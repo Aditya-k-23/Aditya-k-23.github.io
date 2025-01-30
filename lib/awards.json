@@ -1,0 +1,56 @@
+{
+  "awards": [
+    {
+      "id": 1,
+      "year": "2020-2024",
+      "name": "International Scholar Award",
+      "institution": "University of Toronto",
+      "category": "Academic",
+      "description": "The International Scholar Awards are automatically awarded to exceptional international students across U of T’s largest divisions and faculties. These renewable awards are offered upon admission.",
+      "value": "100,000"
+    },
+    {
+      "id": 2,
+      "year": "2020-2024",
+      "name": "Dean's List Scholar",
+      "institution": "University of Toronto",
+      "category": "Academic",
+      "description": "This is awarded to students who have achieved a cumulative grade point average of 3.5 or higher in their most recent year of study in the past Fall, Winter, and/or Summer sessions."
+    },
+    {
+      "id": 3,
+      "year": "2024",
+      "name": "University of Toronto Student Leadership Award",
+      "institution": "University of Toronto",
+      "category": "Leadership",
+      "description": "The University of Toronto Student Leadership Award continues U of T’s long-standing tradition of recognizing outstanding student leadership, volunteer service, and commitment to the university. This tradition began with the Gordon Cressy Student Leadership Award, which ran from 1994 - 2019 and was named in honour of Mr. Gordon Cressy, former Vice-President, Development and University Relations. In naming the award, the University of Toronto Alumni Association (UTAA) recognized Cressy's leadership and volunteer service across various spheres, as well as his term at the university. During the award’s 25-year history, it celebrated the exemplary contributions of more than 4,000 students whose commitment and volunteerism had a lasting impact on their peers and the university. The University of Toronto Student Leadership Award (UTSLA) continues the spirit of the retired Cressy Award. Recipients of the UTSLA join the distinguished community of past Cressy Award recipients in being honoured for their exemplary leadership and volunteer service to U of T."
+    },
+    {
+      "id": 4,
+      "year": "2023",
+      "name": "Computer And Mathematical Sciences Citizenship Award",
+      "institution": "Department of Computer and Mathematical Sciences at the University of Toronto Scarborough",
+      "category": "Leadership",
+      "description": "Awarded to a student enrolled in Computer and Mathematical Sciences who is in good academic standing and demonstrated leadership and involvement in the department.",
+      "value": "1,612"
+    },
+    {
+      "id": 5,
+      "year": "2022",
+      "name": "Scarborough College General In-course Scholarships",
+      "institution": "University of Toronto Scarborough",
+      "category": "Academic",
+      "description": "Exceptional performance in a course with an experiential learning component.",
+      "value": "318"
+    },
+    {
+      "id": 6,
+      "year": "2020-2024",
+      "name": "University of Toronto Scholar",
+      "institution": "University of Toronto Scarborough",
+      "category": "Academic",
+      "description": "The U of T Scholars Program provides recognition to the University’s outstanding students, at admission and on an on-going basis. In some cases a U of T Scholars award is tenable in conjunction with other admission awards that students may receive from their college/faculty.",
+      "value": "7500"
+    }
+  ]
+}

@@ -10,6 +10,9 @@ const navItems = {
   "/publications": {
     name: "publications",
   },
+  "/awards": {
+    name: "awards",
+  },
 };
 
 export function Navbar() {
