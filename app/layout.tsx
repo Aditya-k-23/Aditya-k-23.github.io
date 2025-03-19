@@ -7,7 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "./components/footer";
 
-let baseUrl = "https://adityakulkarni.me/";
+const baseUrl = "https://adityakulkarni.me/";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
