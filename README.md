@@ -6,9 +6,9 @@ Made with ❤️ by Aditya Kulkarni
 
 ## Getting Started
 
-`npm install` to install all the dependencies.
+`pnpm install` to install all the dependencies.
 
-`npm start` to start the development server.
+`pnpm run dev` to start the development server.
 
 `npm run build` to build the project for production.
 
