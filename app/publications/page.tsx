@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from "react";
 import publicationsJSON from "../../lib/publications.json";
 
-// Mock function to fetch publication data
 const fetchPublications = async () => {
   return publicationsJSON["publications"];
 };

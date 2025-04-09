@@ -13,6 +13,9 @@ const navItems = {
   "/awards": {
     name: "awards",
   },
+  "/projects": {
+    name: "projects",
+  },
 };
 
 export function Navbar() {

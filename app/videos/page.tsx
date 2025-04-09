@@ -1,15 +1,19 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { fetchVideos } from "../../lib/fetchVideos";
+import videosJSON from "../../lib/videos.json";
 import VideoCard from "../components/videoCard";
+
+const fetchVideos = async () => {
+  return videosJSON["videos"];
+};
 
 const VideosPage = () => {
   const [videos, setVideos] = useState<
     { id: number; title: string; platform: string; url: string }[]
   >([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 2; // Number of items per page
+  const itemsPerPage = 2;
 
   useEffect(() => {
     const getVideos = async () => {

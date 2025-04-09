@@ -242,7 +242,7 @@ table {
 }
 
 .publication-card p {
-  color: #666;
+  color: #99a1af;
 }
 
 .publication-card a {
@@ -257,7 +257,6 @@ table {
 .awards-container {
   max-width: 800px;
   gap: 16px;
-  font-family: Arial, sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -293,5 +292,5 @@ table {
 .award-value,
 .award-category {
   margin: 5px 0;
-  color: #666;
+  color: #99a1af;
 }
