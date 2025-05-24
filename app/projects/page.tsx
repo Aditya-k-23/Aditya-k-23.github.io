@@ -25,7 +25,7 @@ async function fetchPinnedRepos() {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.ACCESS_TOKEN}`,
+        Authorization: `Bearer ${process.env.PAT_TOKEN}`,
       },
       body: JSON.stringify({ query }),
       next: { revalidate: 3600 }, // ISR support for Next.js
