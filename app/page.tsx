@@ -21,8 +21,15 @@ export default function Page() {
             <u>University of Toronto.</u>
           </a>
           <br />
+          <br />
           {` I'm passionate about developing software and building products that
         positively impact people's lives.`}
+          <br />
+          <br />
+          {`I'm currently working as a software engineer at `}
+          <a href="https://www.borderpass.ai//">
+            <u>BorderPass.</u>
+          </a>
         </p>
       </div>
     </section>
