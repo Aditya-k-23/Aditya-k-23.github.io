@@ -35,7 +35,7 @@ const icons = [
     label: "LinkedIn",
   },
   {
-    href: "https://drive.google.com/file/d/11_98zjDF_7-ciJ9tTNqEBLq_pgW6taFQ/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1wFmW8Gbj99X0p9FjNWM39Mt9OAZ64zpU/view?usp=sharing",
     icon: <FaFilePdf style={{ fontSize: "2rem" }} />,
     label: "Resume",
   },
