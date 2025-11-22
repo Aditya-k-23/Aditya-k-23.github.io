@@ -48,8 +48,8 @@ export default async function ProjectsPage() {
 
   return (
     <main className="p-4">
-      <h1 className="page-title text-center text-3xl font-semibold mb-6">
-        My Projects
+      <h1 className="mb-8 text-2xl font-semibold tracking-tighter text-center">
+        Projects
       </h1>
       <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-4">
         {projects.map(({ id, name, description, url }) => (

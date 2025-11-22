@@ -3,33 +3,45 @@ import Image from "next/image";
 export default function Page() {
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        👋 Hello! I am Adi
+      <h1 className="mb-4 text-2xl font-semibold tracking-tighter">
+        👋 Hello! I&apos;m Adi
       </h1>
-      <div className="flex items-center gap-x-4">
+      <p className="mb-6 text-lg text-neutral-600 dark:text-neutral-400">
+        Software Engineer & CS Educator
+      </p>
+      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
         <Image
           src="/adi.webp"
           alt="Aditya Profile Picture"
-          className="relative rounded-full object-cover"
+          className="relative rounded-full object-cover flex-shrink-0"
           height={200}
           width={200}
         />
         <div className="mb-4 space-y-3">
           <p>
             I&apos;m a computer science graduate from the{" "}
-            <a href="https://www.utoronto.ca/" className="underline">
+            <a
+              href="https://www.utoronto.ca/"
+              className="underline hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors"
+            >
               University of Toronto
             </a>
             , passionate about building impactful products that improve
             people&apos;s lives.
           </p>
           <p>
-            I&apos;m working as a software engineer @{" "}
-            <a href="https://www.borderpass.ai/" className="underline">
+            Currently, I&apos;m a software engineer at{" "}
+            <a
+              href="https://www.borderpass.ai/"
+              className="underline hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors"
+            >
               BorderPass
             </a>{" "}
-            and teach @{" "}
-            <a href="https://datasciences.utoronto.ca/" className="underline">
+            and teach at the{" "}
+            <a
+              href="https://datasciences.utoronto.ca/"
+              className="underline hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors"
+            >
               UofT Data Sciences Institute
             </a>
             .

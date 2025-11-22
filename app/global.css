@@ -190,7 +190,7 @@ table {
   .video-card {
     border-color: rgba(204, 204, 204, 0.2);
   }
-  
+
   .video-card-platform {
     color: #99a1af;
   }
@@ -222,31 +222,38 @@ table {
 }
 
 .publication-card {
-  border: 1px solid #ccc;
+  border: 1px solid rgba(204, 204, 204, 0.3);
   border-radius: 8px;
   padding: 16px;
-  width: 100%; /* Ensure the card takes full width of the grid cell */
+  width: 100%;
   max-width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: transparent;
+}
+
+.publication-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .publication-card h3 {
-  margin: 8px 0;
-  font-size: large;
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: inherit;
 }
 
 .publication-card p {
-  color: #99a1af;
+  color: inherit;
+  line-height: 1.6;
 }
 
-.publication-card a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.publication-card a:hover {
-  text-decoration: underline;
+@media (prefers-color-scheme: dark) {
+  .publication-card {
+    border-color: rgba(204, 204, 204, 0.2);
+  }
 }
 
 .awards-container {
@@ -262,30 +269,67 @@ table {
 }
 
 .award-item {
-  border: 1px solid #ccc;
+  border: 1px solid rgba(204, 204, 204, 0.3);
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 16px;
-  width: 100%; /* Ensure the card takes full width of the grid cell */
+  width: 100%;
   max-width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .award-item:hover {
-  transform: scale(var(--hover-scale));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.award-item-major {
+  border: 2px solid rgba(59, 130, 246, 0.3);
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.05) 0%,
+    rgba(59, 130, 246, 0.02) 100%
+  );
+}
+
+.award-item-major:hover {
+  border-color: rgba(59, 130, 246, 0.5);
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.2);
 }
 
 .award-name {
-  font-size: large;
+  font-size: 1.125rem;
+  font-weight: 600;
   margin: 0;
-  color: var(--text-color);
+  color: inherit;
 }
 
-.award-details,
-.award-description,
+.award-details {
+  margin: 4px 0 8px 0;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.award-description {
+  margin: 8px 0;
+  line-height: 1.6;
+  color: inherit;
+}
+
 .award-value,
 .award-category {
-  margin: 5px 0;
+  margin: 0;
   color: #99a1af;
+}
+
+@media (prefers-color-scheme: dark) {
+  .award-item {
+    border-color: rgba(204, 204, 204, 0.2);
+  }
+
+  .award-details {
+    color: #99a1af;
+  }
 }

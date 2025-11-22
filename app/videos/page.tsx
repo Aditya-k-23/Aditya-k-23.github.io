@@ -25,7 +25,7 @@ const VideosPage = () => {
   return (
     <div>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter text-center">
-        My Videos
+        Videos & Talks
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {videos.map((video) => (

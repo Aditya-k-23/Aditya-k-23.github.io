@@ -12,17 +12,38 @@ const baseUrl = "https://adityakulkarni.me/";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Aditya Kulkarni",
-    template: "My portfolio",
+    default: "Aditya Kulkarni | Software Engineer & CS Education Researcher",
+    template: "%s | Aditya Kulkarni",
   },
-  description: "Aditya's Portfolio",
+  description:
+    "Software engineer at BorderPass and CS education researcher. Computer science graduate from University of Toronto with publications in SIGCSE and ITiCSE. Passionate about building impactful products and advancing computer science education.",
+  keywords: [
+    "Aditya Kulkarni",
+    "Software Engineer",
+    "Computer Science Education",
+    "University of Toronto",
+    "CS Education Research",
+    "SIGCSE",
+    "ITiCSE",
+    "BorderPass",
+    "Portfolio",
+  ],
+  authors: [{ name: "Aditya Kulkarni" }],
+  creator: "Aditya Kulkarni",
   openGraph: {
-    title: "My Portfolio",
-    description: "This is my portfolio.",
+    title: "Aditya Kulkarni | Software Engineer & CS Education Researcher",
+    description:
+      "Software engineer at BorderPass and CS education researcher. Computer science graduate from University of Toronto with publications in SIGCSE and ITiCSE.",
     url: baseUrl,
-    siteName: "My Portfolio",
+    siteName: "Aditya Kulkarni",
     locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aditya Kulkarni | Software Engineer & CS Education Researcher",
+    description:
+      "Software engineer at BorderPass and CS education researcher. Computer science graduate from University of Toronto.",
   },
   robots: {
     index: true,

@@ -11,32 +11,32 @@ import Link from "next/link";
 const icons = [
   {
     href: "mailto:adityaskulkarni23@gmail.com",
-    icon: <FaEnvelope style={{ fontSize: "2rem" }} />,
+    icon: <FaEnvelope style={{ fontSize: "1.5rem" }} />,
     label: "Email",
   },
   {
     href: "https://github.com/Aditya-k-23",
-    icon: <FaGithub style={{ fontSize: "2rem" }} />,
+    icon: <FaGithub style={{ fontSize: "1.5rem" }} />,
     label: "Github",
   },
   {
     href: "https://orcid.org/0000-0002-1836-1651",
-    icon: <FaOrcid style={{ fontSize: "2rem" }} />,
+    icon: <FaOrcid style={{ fontSize: "1.5rem" }} />,
     label: "ORCID",
   },
   {
     href: "https://www.instagram.com/adis_kaleidoscope/",
-    icon: <FaInstagram style={{ fontSize: "2rem" }} />,
+    icon: <FaInstagram style={{ fontSize: "1.5rem" }} />,
     label: "Instagram",
   },
   {
     href: "https://www.linkedin.com/in/aditya-s-kulkarni/",
-    icon: <FaLinkedin style={{ fontSize: "2rem" }} />,
+    icon: <FaLinkedin style={{ fontSize: "1.5rem" }} />,
     label: "LinkedIn",
   },
   {
-    href: "https://drive.google.com/file/d/1wFmW8Gbj99X0p9FjNWM39Mt9OAZ64zpU/",
-    icon: <FaFilePdf style={{ fontSize: "2rem" }} />,
+    href: "https://drive.google.com/file/d/1wFmW8Gbj99X0p9FjNWM39Mt9OAZ64zpU/view?usp=sharing",
+    icon: <FaFilePdf style={{ fontSize: "1.5rem" }} />,
     label: "Resume",
   },
 ];
