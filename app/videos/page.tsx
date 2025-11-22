@@ -12,8 +12,6 @@ const VideosPage = () => {
   const [videos, setVideos] = useState<
     { id: number; title: string; platform: string; url: string }[]
   >([]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 2;
 
   useEffect(() => {
     const getVideos = async () => {
@@ -24,33 +22,14 @@ const VideosPage = () => {
     getVideos();
   }, []);
 
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = videos.slice(indexOfFirstItem, indexOfLastItem);
-
-  const totalPages = Math.ceil(videos.length / itemsPerPage);
-
-  const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
-  };
-
   return (
     <div>
-      <h1 className="page-title">My Videos</h1>
-      <div className="video-grid">
-        {currentItems.map((video) => (
+      <h1 className="mb-8 text-2xl font-semibold tracking-tighter text-center">
+        My Videos
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {videos.map((video) => (
           <VideoCard key={video.id} video={video} />
-        ))}
-      </div>
-      <div className="pagination">
-        {Array.from({ length: totalPages }, (_, index) => (
-          <button
-            key={index + 1}
-            onClick={() => handlePageChange(index + 1)}
-            className={currentPage === index + 1 ? "active" : ""}
-          >
-            {index + 1}
-          </button>
         ))}
       </div>
     </div>

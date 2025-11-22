@@ -1,8 +1,17 @@
 import React from "react";
 
-const VideoCard = ({ video }) => {
+interface VideoCardProps {
+  video: {
+    id: number;
+    title: string;
+    platform: string;
+    url: string;
+  };
+}
+
+const VideoCard = ({ video }: VideoCardProps) => {
   const { title, platform, url } = video;
-  const videoId = url.split("v=")[1];
+  const videoId = url.split("v=")[1]?.split("&")[0];
 
   return (
     <div className="video-card">
@@ -14,8 +23,8 @@ const VideoCard = ({ video }) => {
           allowFullScreen
         ></iframe>
       </div>
-      <h3>{title}</h3>
-      <p>{platform}</p>
+      <h3 className="video-card-title">{title}</h3>
+      <p className="video-card-platform">{platform}</p>
     </div>
   );
 };

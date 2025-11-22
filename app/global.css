@@ -155,29 +155,45 @@ table {
   color: var(--text-color);
 }
 
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto, 1fr);
-  gap: 16px;
-}
-
 .video-card {
-  border: 1px solid #ccc;
+  border: 1px solid rgba(204, 204, 204, 0.3);
   border-radius: 8px;
   padding: 16px;
   width: 100%;
   max-width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: transparent;
 }
 
-.video-card h3 {
-  margin: 8px 0;
-  font-size: large;
+.video-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.video-card p {
+.video-card-title {
+  margin: 12px 0 4px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: inherit;
+}
+
+.video-card-platform {
+  margin: 0;
+  font-size: 0.875rem;
   color: #666;
+}
+
+@media (prefers-color-scheme: dark) {
+  .video-card {
+    border-color: rgba(204, 204, 204, 0.2);
+  }
+  
+  .video-card-platform {
+    color: #99a1af;
+  }
 }
 
 .video-wrapper {
@@ -187,6 +203,7 @@ table {
   overflow: hidden;
   max-width: 100%;
   background: #000;
+  border-radius: 4px;
 }
 
 .video-wrapper iframe {
@@ -196,28 +213,6 @@ table {
   width: 100%;
   height: 100%;
   border: 0;
-}
-
-.pagination {
-  margin-top: 16px;
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-}
-
-.pagination button {
-  padding: 8px 16px;
-  border: 1px solid #ccc;
-  background-color: #000;
-  color: #fff;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.pagination button.active {
-  background-color: #0070f3;
-  color: #fff;
-  border-color: #0070f3;
 }
 
 .publication-grid {
