@@ -1,10 +1,18 @@
+import Link from "next/link";
+
 export default function NotFound() {
   return (
-    <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        404 - Page Not Found
-      </h1>
-      <p className="mb-4">The page you are looking for does not exist.</p>
+    <section className="case-head row">
+      <div className="note">
+        <p>404</p>
+      </div>
+      <div>
+        <h1>This page doesn&rsquo;t exist.</h1>
+        <p className="lede">
+          It may have moved in the redesign. <Link href="/">Go to the home page</Link>{" "}
+          or <Link href="/research/">see the research</Link>.
+        </p>
+      </div>
     </section>
   );
 }

@@ -1,0 +1,135 @@
+// All public-facing facts live here so they can be checked and edited in one place.
+// Disclosure rule: name systems at the capability level, with numbers and scale.
+// No internal architecture.
+
+export const site = {
+  name: "Aditya Kulkarni",
+  shortName: "Adi",
+  url: "https://adityakulkarni.me",
+  email: "adityaskulkarni23@gmail.com",
+  description:
+    "Aditya Kulkarni builds AI systems for decisions people can’t afford to get wrong: immigration at BorderPass, oral assessment at TalkLab, and research on how people learn computing.",
+  links: {
+    github: "https://github.com/Aditya-k-23",
+    linkedin: "https://www.linkedin.com/in/aditya-s-kulkarni/",
+    orcid: "https://orcid.org/0000-0002-1836-1651",
+    resume:
+      "https://drive.google.com/file/d/1wFmW8Gbj99X0p9FjNWM39Mt9OAZ64zpU/view?usp=sharing",
+  },
+};
+
+export type Role = {
+  org: string;
+  href: string;
+  role: string;
+  since: string;
+  body: string;
+  caseStudy?: string;
+};
+
+export const roles: Role[] = [
+  {
+    org: "BorderPass",
+    href: "https://www.borderpass.ai/",
+    role: "Software lead",
+    since: "Joined May 2025, leading since Jan 2026",
+    body: "Immigration is paperwork with someone’s future attached. I lead a team of five and own the architecture behind the platform where applicants file and lawyers review, now more than 300 visa cases a month.",
+    caseStudy: "/work/borderpass/",
+  },
+  {
+    org: "TalkLab",
+    href: "https://demo.talklab.ca/",
+    role: "Senior AI engineer and advisor",
+    since: "Since 2026",
+    body: "TalkLab gives every student an oral exam, with an AI doing the asking. I built most of the platform behind its first pilot, which put roughly 1,500 students in front of the examiner.",
+    caseStudy: "/work/talklab/",
+  },
+  {
+    org: "University of Toronto",
+    href: "https://datasciences.utoronto.ca/",
+    role: "Sessional instructor, Data Sciences Institute",
+    since: "Ongoing",
+    body: "I teach machine learning. Teaching keeps me honest about the question every model deserves: how would you know if it were wrong?",
+  },
+];
+
+export type Publication = {
+  title: string;
+  venue: string;
+  year: string;
+  doi: string;
+  poster?: string;
+  abstract: string;
+};
+
+export const publications: Publication[] = [
+  {
+    title:
+      "Literature Mapping: A Scaffolded, Scalable, Low-Overhead Research Experience",
+    venue: "SIGCSE TS",
+    year: "2025",
+    doi: "https://doi.org/10.1145/3641554.3701938",
+    poster:
+      "https://drive.google.com/file/d/1rV9a_i3mU03xmOk_0Dj6ibeX-QBuJ1oW/view?usp=sharing",
+    abstract:
+      "There is a wealth of evidence that involving undergraduate students in research has positive impacts in a variety of areas, from representation and retention to outcomes and self-efficacy. However, developing and growing an undergraduate research program can be daunting, especially for institutions that do not have a large existing research enterprise. In this work, we detail a program that revolves around student-developed literature maps to help students gain the ability to read and assess research papers in a way that is accessible, robust, and requires relatively little faculty overhead. We further detail how this program has been run through 4 iterations, with a total of 47 students producing 5 posters or short papers, and 3 full papers. In this work, we provide our experiences using literature mapping projects to boot-strap an undergraduate research program and provide quantitative and qualitative analysis of the students who have participated. All of the materials, including sample spreadsheets, and scripts to generate LaTeX tables and figures are included for anyone wishing to undertake a literature mapping project of their own.",
+  },
+  {
+    title:
+      "A Framework for Evaluating the Impact of Production Quality on Coding Demonstration Videos",
+    venue: "ITiCSE",
+    year: "2024",
+    doi: "https://doi.org/10.1145/3649405.3659507",
+    poster:
+      "https://drive.google.com/file/d/1e5oR_0aB38vB6o3KMpiztGf2PBRAhEl-/view?usp=sharing",
+    abstract:
+      "This work reports on a pilot study that examines the impact of the production quality of coding demonstration videos on student learning. With an increase in demand for asynchronous content, many instructors find the scripting and development of coding demonstration videos cumbersome and time consuming. However, it is an open question whether it is necessary to carefully script and produce videos to satisfy student desires or provide positive learning outcomes. In this study, participants watched coding demonstration videos, and the impact was measured on attitude surveys and content questions. Students were randomly assigned to watch either high production quality videos which were carefully scripted and edited for concision and accuracy, or low production quality videos which were created on-the-fly by teaching assistants with no preparation time or post video editing. In this pilot study, no statistical significance in test performance was found based on the production quality of the videos. There was an impact on responses to a single question on the CAS. This work develops a methodology for further evaluation of the impact of production quality of coding demonstration videos that will eventually guide practitioners on the time and effort required to maximize student benefit.",
+  },
+  {
+    title: "Finding and Categorizing COVID-19 Papers in CS Education",
+    venue: "SIGCSE TS",
+    year: "2023",
+    doi: "https://doi.org/10.1145/3545947.3576288",
+    poster:
+      "https://drive.google.com/file/d/1dMXvtjuDkpp9C6JiFXTr847ZRv6IkI8j/view?usp=sharing",
+    abstract:
+      "In the first 2 years following the outbreak of COVID-19, many papers have been published regarding the impacts and adaptations of the pandemic on computer science education. As a first step towards a systematic literature mapping, this study attempts to develop a process for searching and a categorization schema for papers. The goal of this project is to produce a literature map which will be used to provide an initial assessment of the state of research, as well as a framework for future research directions. Limiting our search to papers published in the ACM Digital Library in the publications sponsored by SIGCSE, we first create and validate a query and inclusion/exclusion criteria for papers. Using a double evaluator model, we find high agreement with a Cohen’s Kappa of 0.93, resulting in 42 papers across 6 conference proceedings. We further validate these findings by independent checking against all papers from SIGCSE2021 TS. We then develop categories across three dimensions: In activity: we find remote teaching, remote assessment, remote work, virtual events and general impact of pandemic. In measurement: we find grades, non-grade assessment, attendance/retention, affect/perception, and mental health. In population: we find K-12 students, university/college students, Educators, and the sub-categories of introductory/CS0/CS1 students, gender, and race. Double rater assessments initially produced a relatively low Kappa score of 0.58, but after protocol revision, and the production of additional categories, the kappa score was raised to a very high 0.94.",
+  },
+];
+
+// One-line plain-language gloss for each paper, shown on the home page.
+export const paperGloss: Record<string, string> = {
+  "2025": "A cheap, repeatable way to give undergraduates a real first research experience. Forty-seven students, four cohorts, eight papers and posters.",
+  "2024": "Do coding videos need careful scripting and editing to teach well? Our pilot found no significant difference in test scores.",
+  "2023": "A search protocol and category scheme for mapping two years of pandemic-era CS education research.",
+};
+
+export const talks = [
+  {
+    title: "Voices of CMS podcast, with Prof. Brian Harrington",
+    url: "https://www.youtube.com/watch?v=7lY16KvM2M8",
+  },
+  {
+    title: "Voices of CMS podcast, with Prof. Kathleen Smith",
+    url: "https://www.youtube.com/watch?v=rPqYNHLfSWk",
+  },
+  {
+    title: "Voices of CMS podcast, with Prof. Sotirios Damouras",
+    url: "https://www.youtube.com/watch?v=bT_L6cMBj40",
+  },
+  {
+    title: "DS3 Datathon, AI ethics panel",
+    url: "https://www.youtube.com/watch?v=VEJsijYmVk0",
+  },
+];
+
+export const recognition = [
+  { year: "2024", name: "University of Toronto Student Leadership Award" },
+  {
+    year: "2023",
+    name: "Computer and Mathematical Sciences Citizenship Award, UTSC",
+  },
+  { year: "2020–24", name: "International Scholar Award, University of Toronto" },
+  { year: "2020–24", name: "University of Toronto Scholar" },
+  { year: "2020–24", name: "Dean’s List Scholar" },
+];

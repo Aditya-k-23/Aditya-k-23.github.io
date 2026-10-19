@@ -1,53 +1,151 @@
-import Image from "next/image";
+import Link from "next/link";
+import { roles, publications, paperGloss, site } from "../lib/site";
+import { getPosts, formatDate } from "../lib/posts";
 
-export default function Page() {
+export default function Home() {
+  const posts = getPosts().slice(0, 3);
+
   return (
-    <section>
-      <h1 className="mb-4 text-2xl font-semibold tracking-tighter">
-        👋 Hello! I&apos;m Adi
-      </h1>
-      <p className="mb-6 text-lg text-neutral-600 dark:text-neutral-400">
-        Software Engineer & CS Educator
-      </p>
-      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-        <Image
-          src="/adi.webp"
-          alt="Aditya Profile Picture"
-          className="relative rounded-full object-cover flex-shrink-0"
-          height={200}
-          width={200}
-        />
-        <div className="mb-4 space-y-3">
-          <p>
-            I&apos;m a computer science graduate from the{" "}
-            <a
-              href="https://www.utoronto.ca/"
-              className="underline hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors"
-            >
-              University of Toronto
-            </a>
-            , passionate about building impactful products that improve
-            people&apos;s lives.
-          </p>
-          <p>
-            Currently, I&apos;m a software engineer at{" "}
-            <a
-              href="https://www.borderpass.ai/"
-              className="underline hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors"
-            >
-              BorderPass
-            </a>{" "}
-            and teach at the{" "}
-            <a
-              href="https://datasciences.utoronto.ca/"
-              className="underline hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors"
-            >
-              UofT Data Sciences Institute
-            </a>
-            .
+    <>
+      <section className="hero row" aria-labelledby="hero-title">
+        <div className="note">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/adi.webp"
+            alt="Portrait of Aditya Kulkarni"
+            className="portrait"
+            width={104}
+            height={104}
+          />
+          <p>Toronto</p>
+          <p>University of Toronto, CS</p>
+        </div>
+        <div>
+          <h1 id="hero-title">
+            I build AI systems for decisions people can&rsquo;t afford to get
+            wrong.
+          </h1>
+          <p className="lede">
+            A visa application. An oral exam. A claim about how students learn.
+            Each is a judgment someone has to live with, and software now has a
+            hand in all of them. I build that software, and I hold it to one
+            rule: if you can&rsquo;t check its work, it hasn&rsquo;t earned the
+            decision.
           </p>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section className="block" id="work" aria-labelledby="work-title">
+        <div className="row">
+          <div />
+          <h2 className="section" id="work-title">
+            Where I work
+          </h2>
+        </div>
+        {roles.map((r) => (
+          <div className="row entry" key={r.org}>
+            <div className="note">
+              <p>{r.role}</p>
+              <p>{r.since}</p>
+            </div>
+            <div>
+              <h3>
+                <a href={r.href} target="_blank" rel="noopener noreferrer">
+                  {r.org}
+                </a>
+              </h3>
+              <p>{r.body}</p>
+              {r.caseStudy && (
+                <p className="more">
+                  <Link href={r.caseStudy}>Read the {r.org} case study</Link>
+                </p>
+              )}
+            </div>
+          </div>
+        ))}
+      </section>
+
+      <section className="block" aria-labelledby="research-title">
+        <div className="row">
+          <div />
+          <div>
+            <h2 className="section" id="research-title">
+              Research
+            </h2>
+            <p>
+              I study how people learn computing, and how we measure it. Next,
+              I want to know what changes when the examiner is a model.
+            </p>
+          </div>
+        </div>
+        {publications.map((p) => (
+          <div className="row paper" key={p.doi}>
+            <div className="note">
+              <p>
+                {p.venue} {p.year}
+              </p>
+            </div>
+            <div>
+              <h3>
+                <a href={p.doi} target="_blank" rel="noopener noreferrer">
+                  {p.title}
+                </a>
+              </h3>
+              <p>{paperGloss[p.year]}</p>
+            </div>
+          </div>
+        ))}
+        <div className="row">
+          <div />
+          <p className="more">
+            <Link href="/research/">
+              Abstracts, posters, talks and recognition
+            </Link>
+          </p>
+        </div>
+      </section>
+
+      {posts.length > 0 && (
+        <section className="block" aria-labelledby="writing-title">
+          <div className="row">
+            <div />
+            <h2 className="section" id="writing-title">
+              Writing
+            </h2>
+          </div>
+          {posts.map((post) => (
+            <div className="row entry" key={post.slug}>
+              <div className="note">
+                <p>{formatDate(post.date)}</p>
+              </div>
+              <div>
+                <h3>
+                  <Link href={`/writing/${post.slug}/`}>{post.title}</Link>
+                </h3>
+                <p>{post.summary}</p>
+              </div>
+            </div>
+          ))}
+        </section>
+      )}
+
+      <section className="block" aria-labelledby="contact-title">
+        <div className="row">
+          <div />
+          <div>
+            <h2 className="section" id="contact-title">
+              Get in touch
+            </h2>
+            <p>
+              If you&rsquo;re hiring for hard problems in applied AI, building
+              in immigration or assessment, or looking for a research
+              collaborator, I&rsquo;d like to hear from you. Email reaches me
+              fastest:{" "}
+              <a href={`mailto:${site.email}`}>{site.email}</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

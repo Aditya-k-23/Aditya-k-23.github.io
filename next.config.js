@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Add any Next.js config options here
+  // Static export for GitHub Pages. Every page is pre-rendered at build time.
+  output: "export",
+  trailingSlash: true,
+  images: { unoptimized: true },
 };
 
 export default nextConfig;
-
-
-
