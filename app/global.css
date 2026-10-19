@@ -59,6 +59,7 @@ html {
 body {
   margin: 0;
   background: var(--paper);
+  color: var(--ink);
   font-family: var(--serif);
   font-size: 1.1875rem; /* 19px */
   line-height: 1.6;
