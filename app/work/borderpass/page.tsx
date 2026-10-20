@@ -50,12 +50,15 @@ export default function BorderPass() {
         </p>
       </CaseSection>
 
-      <CaseSection notes={["Leadership"]}>
-        <h3>Team</h3>
+      <CaseSection notes={["Team lead", "60 organizations mapped"]}>
+        <h3>Leadership</h3>
         <p>
-          I lead a team of engineers and interns. I set up our on-call rotation
-          and led the code-quality overhaul that gave each business rule a
-          single home.
+          Eight months after joining as an engineer, I was leading the team.
+        </p>
+        <p>
+          My work reaches past engineering. I mapped 60 global mobility
+          organizations, from relocation firms to AI-native startups, to show
+          where BorderPass can win.
         </p>
       </CaseSection>
 
