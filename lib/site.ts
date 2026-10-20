@@ -44,7 +44,7 @@ export const roles: Role[] = [
     href: "https://demo.talklab.ca/",
     role: "Senior AI engineer and advisor",
     since: "Since 2026",
-    body: "Oral exams run by an AI examiner. I built most of the platform for its first pilot, with about 1,500 students at U of T Scarborough.",
+    body: "Oral exams run by an AI examiner. I built the platform and took it from prototype to a 1,500-student pilot at U of T Scarborough.",
     caseStudy: "/work/talklab/",
   },
   {
