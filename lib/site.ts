@@ -35,7 +35,7 @@ export const roles: Role[] = [
     href: "https://www.borderpass.ai/",
     role: "Software lead",
     since: "Since 2025",
-    body: "An immigration platform where applicants prepare their files and lawyers review them. I lead a team of five and own the platform architecture. It now carries more than 300 visa cases a month.",
+    body: "An immigration platform where applicants prepare their files and lawyers review them. I lead an engineering team and own the architecture behind 300+ visa cases a month.",
     caseStudy: "/work/borderpass/",
   },
   {

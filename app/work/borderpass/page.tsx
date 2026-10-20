@@ -5,7 +5,7 @@ import { LunaDiagram } from "../../components/diagrams";
 export const metadata: Metadata = {
   title: "BorderPass",
   description:
-    "Aditya Kulkarni leads an engineering team at BorderPass, an immigration platform carrying more than 300 visa cases a month.",
+    "Aditya Kulkarni leads an engineering team and owns the platform architecture at BorderPass, an immigration platform carrying 300+ visa cases a month.",
   alternates: { canonical: "/work/borderpass/" },
 };
 
@@ -15,7 +15,7 @@ export default function BorderPass() {
       <CaseHead
         notes={["Software lead", "Joined May 2025", "Leading since Jan 2026"]}
         title="BorderPass"
-        lede="BorderPass is an immigration platform for people moving to Canada. Applicants prepare their files online and lawyers review them. I lead one of its engineering teams and own the platform architecture."
+        lede="BorderPass is an immigration platform for people moving to Canada. Applicants prepare their files online and lawyers review them. I lead an engineering team and own the platform architecture."
       />
 
       <CaseSection notes={["Natural language to SQL"]}>
@@ -31,8 +31,8 @@ export default function BorderPass() {
       <CaseSection notes={["300+ cases a month", "Four lawyers", "−57% p95 load time"]}>
         <h3>Platform</h3>
         <p>
-          Four lawyers handle more than 300 visa cases a month on the platform.
-          I rebuilt the legal console they work in and cut its p95 load time by
+          The platform lets four lawyers carry 300+ visa cases a month. I
+          rebuilt the legal console they work in and cut its p95 load time by
           57%.
         </p>
         <p>
@@ -50,11 +50,12 @@ export default function BorderPass() {
         </p>
       </CaseSection>
 
-      <CaseSection notes={["Two engineers", "Three interns"]}>
+      <CaseSection notes={["Leadership"]}>
         <h3>Team</h3>
         <p>
-          I lead a team of five. I set up our on-call rotation and led a
-          code-quality overhaul that gave each business rule a single home.
+          I lead a team of engineers and interns. I set up our on-call rotation
+          and led the code-quality overhaul that gave each business rule a
+          single home.
         </p>
       </CaseSection>
 
