@@ -8,7 +8,7 @@ export const site = {
   url: "https://adityakulkarni.me",
   email: "adityaskulkarni23@gmail.com",
   description:
-    "Aditya Kulkarni builds AI for immigration at BorderPass and oral assessment at TalkLab, and researches how people learn computing.",
+    "Aditya Kulkarni builds technology that gives people more freedom: immigration software at BorderPass, AI oral exams at TalkLab, and research on how people learn computing.",
   links: {
     github: "https://github.com/Aditya-k-23",
     linkedin: "https://www.linkedin.com/in/aditya-s-kulkarni/",
@@ -21,6 +21,7 @@ export const site = {
 export type Role = {
   org: string;
   href: string;
+  area: string;
   role: string;
   since: string;
   body: string;
@@ -30,6 +31,7 @@ export type Role = {
 export const roles: Role[] = [
   {
     org: "BorderPass",
+    area: "Mobility",
     href: "https://www.borderpass.ai/",
     role: "Software lead",
     since: "Since 2025",
@@ -38,6 +40,7 @@ export const roles: Role[] = [
   },
   {
     org: "TalkLab",
+    area: "Learning",
     href: "https://demo.talklab.ca/",
     role: "Senior AI engineer and advisor",
     since: "Since 2026",
@@ -46,6 +49,7 @@ export const roles: Role[] = [
   },
   {
     org: "University of Toronto",
+    area: "Teaching",
     href: "https://datasciences.utoronto.ca/",
     role: "Sessional instructor",
     since: "Ongoing",

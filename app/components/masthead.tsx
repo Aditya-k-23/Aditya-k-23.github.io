@@ -29,9 +29,6 @@ export function Masthead({ hasWriting }: { hasWriting: boolean }) {
             {item.label}
           </Link>
         ))}
-        <a href={site.links.resume} target="_blank" rel="noopener noreferrer">
-          Résumé
-        </a>
       </nav>
     </header>
   );

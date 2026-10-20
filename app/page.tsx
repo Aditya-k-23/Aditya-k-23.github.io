@@ -18,17 +18,15 @@ export default function Home() {
             height={104}
           />
           <p>Toronto</p>
-          <p>University of Toronto, CS</p>
         </div>
         <div>
           <h1 id="hero-title">
-            I build AI that helps people move countries and prove what they
-            know.
+            I build technology that gives people more freedom.
           </h1>
           <p className="lede">
-            I lead an engineering team at BorderPass, built the platform behind
-            TalkLab&rsquo;s AI oral exams, and research how people learn
-            computing.
+            Right now that means helping people immigrate at BorderPass,
+            bringing oral exams to large courses at TalkLab, and researching how
+            people learn computing.
           </p>
         </div>
       </section>
@@ -37,12 +35,13 @@ export default function Home() {
         <div className="row">
           <div />
           <h2 className="section" id="work-title">
-            Work
+            What I&rsquo;m building
           </h2>
         </div>
         {roles.map((r) => (
           <div className="row entry" key={r.org}>
             <div className="note">
+              <p>{r.area}</p>
               <p>{r.role}</p>
               <p>{r.since}</p>
             </div>
@@ -135,7 +134,8 @@ export default function Home() {
               Contact
             </h2>
             <p>
-              For roles, research or collaboration, email{" "}
+              I&rsquo;m always glad to meet people working on mobility,
+              education or AI. Email me at{" "}
               <a href={`mailto:${site.email}`}>{site.email}</a>.
             </p>
           </div>
