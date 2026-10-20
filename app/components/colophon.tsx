@@ -1,4 +1,13 @@
+import { FaEnvelope, FaFileLines, FaGithub, FaLinkedin, FaOrcid } from "react-icons/fa6";
 import { site } from "../../lib/site";
+
+const links = [
+  { label: "Email", href: `mailto:${site.email}`, Icon: FaEnvelope, external: false },
+  { label: "LinkedIn", href: site.links.linkedin, Icon: FaLinkedin, external: true },
+  { label: "GitHub", href: site.links.github, Icon: FaGithub, external: true },
+  { label: "ORCID", href: site.links.orcid, Icon: FaOrcid, external: true },
+  { label: "Résumé", href: site.links.resume, Icon: FaFileLines, external: true },
+];
 
 export function Colophon() {
   return (
@@ -7,21 +16,20 @@ export function Colophon() {
         <p>Toronto</p>
       </div>
       <div>
-        <div className="links">
-          <a href={`mailto:${site.email}`}>Email</a>
-          <a href={site.links.linkedin} target="_blank" rel="noopener noreferrer">
-            LinkedIn
-          </a>
-          <a href={site.links.github} target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-          <a href={site.links.orcid} target="_blank" rel="noopener noreferrer">
-            ORCID
-          </a>
-          <a href={site.links.resume} target="_blank" rel="noopener noreferrer">
-            Résumé
-          </a>
-        </div>
+        <ul className="icon-links">
+          {links.map(({ label, href, Icon, external }) => (
+            <li key={label}>
+              <a
+                href={href}
+                aria-label={label}
+                title={label}
+                {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+              >
+                <Icon aria-hidden="true" focusable="false" />
+              </a>
+            </li>
+          ))}
+        </ul>
         <small>
           © {new Date().getFullYear()} {site.name}.
         </small>
