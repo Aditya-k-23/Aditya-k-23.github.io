@@ -8,7 +8,7 @@ export const site = {
   url: "https://adityakulkarni.me",
   email: "adityaskulkarni23@gmail.com",
   description:
-    "Aditya Kulkarni builds AI systems for decisions people can’t afford to get wrong: immigration at BorderPass, oral assessment at TalkLab, and research on how people learn computing.",
+    "Aditya Kulkarni builds AI for immigration at BorderPass and oral assessment at TalkLab, and researches how people learn computing.",
   links: {
     github: "https://github.com/Aditya-k-23",
     linkedin: "https://www.linkedin.com/in/aditya-s-kulkarni/",
@@ -32,8 +32,8 @@ export const roles: Role[] = [
     org: "BorderPass",
     href: "https://www.borderpass.ai/",
     role: "Software lead",
-    since: "Joined May 2025, leading since Jan 2026",
-    body: "Immigration is paperwork with someone’s future attached. I lead a team of five and own the architecture behind the platform where applicants file and lawyers review, now more than 300 visa cases a month.",
+    since: "Since 2025",
+    body: "An immigration platform where applicants prepare their files and lawyers review them. I lead a team of five and own the platform architecture. It now carries more than 300 visa cases a month.",
     caseStudy: "/work/borderpass/",
   },
   {
@@ -41,15 +41,15 @@ export const roles: Role[] = [
     href: "https://demo.talklab.ca/",
     role: "Senior AI engineer and advisor",
     since: "Since 2026",
-    body: "TalkLab gives every student an oral exam, with an AI doing the asking. I built most of the platform behind its first pilot, which put roughly 1,500 students in front of the examiner.",
+    body: "Oral exams run by an AI examiner. I built most of the platform for its first pilot, with about 1,500 students at U of T Scarborough.",
     caseStudy: "/work/talklab/",
   },
   {
     org: "University of Toronto",
     href: "https://datasciences.utoronto.ca/",
-    role: "Sessional instructor, Data Sciences Institute",
+    role: "Sessional instructor",
     since: "Ongoing",
-    body: "I teach machine learning. Teaching keeps me honest about the question every model deserves: how would you know if it were wrong?",
+    body: "I teach machine learning at the Data Sciences Institute.",
   },
 ];
 
@@ -99,9 +99,9 @@ export const publications: Publication[] = [
 
 // One-line plain-language gloss for each paper, shown on the home page.
 export const paperGloss: Record<string, string> = {
-  "2025": "A cheap, repeatable way to give undergraduates a real first research experience. Forty-seven students, four cohorts, eight papers and posters.",
-  "2024": "Do coding videos need careful scripting and editing to teach well? Our pilot found no significant difference in test scores.",
-  "2023": "A search protocol and category scheme for mapping two years of pandemic-era CS education research.",
+  "2025": "A low-overhead model for undergraduate research, run over four cohorts with 47 students.",
+  "2024": "A controlled pilot on whether polished coding videos teach better than unscripted ones. We found no significant difference in test scores.",
+  "2023": "A search protocol and category scheme for pandemic-era research in CS education.",
 };
 
 export const talks = [

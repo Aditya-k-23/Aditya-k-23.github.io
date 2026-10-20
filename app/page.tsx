@@ -22,15 +22,13 @@ export default function Home() {
         </div>
         <div>
           <h1 id="hero-title">
-            I build AI systems for decisions people can&rsquo;t afford to get
-            wrong.
+            I build AI that helps people move countries and prove what they
+            know.
           </h1>
           <p className="lede">
-            A visa application. An oral exam. A claim about how students learn.
-            Each is a judgment someone has to live with, and software now has a
-            hand in all of them. I build that software, and I hold it to one
-            rule: if you can&rsquo;t check its work, it hasn&rsquo;t earned the
-            decision.
+            I lead an engineering team at BorderPass, built the platform behind
+            TalkLab&rsquo;s AI oral exams, and research how people learn
+            computing.
           </p>
         </div>
       </section>
@@ -39,7 +37,7 @@ export default function Home() {
         <div className="row">
           <div />
           <h2 className="section" id="work-title">
-            Where I work
+            Work
           </h2>
         </div>
         {roles.map((r) => (
@@ -73,8 +71,8 @@ export default function Home() {
               Research
             </h2>
             <p>
-              I study how people learn computing, and how we measure it. Next,
-              I want to know what changes when the examiner is a model.
+              Peer-reviewed work on how people learn computing and how to assess
+              it.
             </p>
           </div>
         </div>
@@ -134,13 +132,10 @@ export default function Home() {
           <div />
           <div>
             <h2 className="section" id="contact-title">
-              Get in touch
+              Contact
             </h2>
             <p>
-              If you&rsquo;re hiring for hard problems in applied AI, building
-              in immigration or assessment, or looking for a research
-              collaborator, I&rsquo;d like to hear from you. Email reaches me
-              fastest:{" "}
+              For roles, research or collaboration, email{" "}
               <a href={`mailto:${site.email}`}>{site.email}</a>.
             </p>
           </div>

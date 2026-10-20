@@ -16,8 +16,7 @@ export default function Work() {
         <div>
           <h1>Work</h1>
           <p className="lede">
-            Two places, one kind of problem: software that helps make a decision
-            someone has to live with.
+            Case studies from BorderPass and TalkLab.
           </p>
         </div>
       </section>

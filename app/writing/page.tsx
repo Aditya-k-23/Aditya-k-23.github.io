@@ -17,7 +17,7 @@ export default function Writing() {
         <div>
           <h1>Writing</h1>
           <p className="lede">
-            Longer thoughts on building AI that people have to trust.
+            Essays on applied AI, assessment and engineering.
           </p>
         </div>
       </section>

@@ -5,7 +5,7 @@ import { LunaDiagram } from "../../components/diagrams";
 export const metadata: Metadata = {
   title: "BorderPass",
   description:
-    "How Aditya Kulkarni leads engineering at BorderPass, an immigration legal tech platform handling more than 300 visa cases a month.",
+    "Aditya Kulkarni leads an engineering team at BorderPass, an immigration platform carrying more than 300 visa cases a month.",
   alternates: { canonical: "/work/borderpass/" },
 };
 
@@ -13,71 +13,52 @@ export default function BorderPass() {
   return (
     <>
       <CaseHead
-        notes={["BorderPass", "Immigration legal tech", "Software lead", "Team of five"]}
-        title="Software for the person filing and the lawyer checking."
-        lede="A visa application is a long form with a short tolerance for error. Miss a document or misread a rule and an applicant can lose months. So the software has to be quick for the lawyer, forgiving for the applicant, and never clever at the expense of being right."
+        notes={["Software lead", "Joined May 2025", "Leading since Jan 2026"]}
+        title="BorderPass"
+        lede="BorderPass is an immigration platform for people moving to Canada. Applicants prepare their files online and lawyers review them. I lead one of its engineering teams and own the platform architecture."
       />
 
-      <CaseSection notes={["Luna", "Natural language to SQL"]}>
-        <h3>Questions without a ticket</h3>
+      <CaseSection notes={["Natural language to SQL"]}>
+        <h3>Luna and the agents console</h3>
         <p>
-          Luna lets the legal team ask questions of case data in plain English
-          and get an answer without an engineer in the loop.
-        </p>
-        <p>
-          Nobody should have to file a ticket to learn where a case stands.
+          Luna turns plain-English questions into SQL over case data. With the
+          agents console, it gives the legal team direct access to that data, so
+          they get answers without filing a request with engineering.
         </p>
         <LunaDiagram />
       </CaseSection>
 
-      <CaseSection notes={["Agents console"]}>
-        <h3>The legal team, unblocked</h3>
+      <CaseSection notes={["300+ cases a month", "Four lawyers", "−57% p95 load time"]}>
+        <h3>Platform</h3>
         <p>
-          Alongside Luna, the agents console gives the legal team direct access
-          to case data. The people closest to an application can act on what
-          they see, the moment they see it.
-        </p>
-      </CaseSection>
-
-      <CaseSection notes={["Platform", "300+ cases a month", "Four lawyers", "−57% p95 load time"]}>
-        <h3>Throughput without shortcuts</h3>
-        <p>
-          Four lawyers carry more than 300 visa cases a month. I rebuilt the
-          console they live in and cut its p95 load time by 57%, because a
-          lawyer waiting on a page isn&rsquo;t reviewing a case.
+          Four lawyers handle more than 300 visa cases a month on the platform.
+          I rebuilt the legal console they work in and cut its p95 load time by
+          57%.
         </p>
         <p>
-          Applicant data stays in Canada, including when it passes through a
-          language model. For people sharing passports and immigration
-          histories, where their data lives isn&rsquo;t a footnote.
+          I set our strategy for hosting language models in Canada, so applicant
+          data stays in the country.
         </p>
       </CaseSection>
 
       <CaseSection notes={["In progress"]}>
-        <h3>Designs that start on the system</h3>
+        <h3>Design pipeline</h3>
         <p>
-          Visa flows change often, and each one used to begin as a blank canvas.
-          I&rsquo;m building a harness that turns a written flow spec into
-          designs that already use our components, so designers can spend
-          their time on judgment instead of layout.
+          I&rsquo;m building a pipeline that turns a written flow spec into
+          designs made from our component library. New visa flows start from
+          the design system instead of a blank canvas.
         </p>
       </CaseSection>
 
-      <CaseSection notes={["Team", "Two engineers, three interns"]}>
-        <h3>Leading</h3>
+      <CaseSection notes={["Two engineers", "Three interns"]}>
+        <h3>Team</h3>
         <p>
-          Most of my job is making good decisions cheap to repeat. That means
-          review standards people can actually follow, an on-call rotation I
-          set up from scratch, and a codebase where each business rule lives in
-          one place.
-        </p>
-        <p>
-          The measure I trust is how many decisions the team gets right
-          without me in the room.
+          I lead a team of five. I set up our on-call rotation and led a
+          code-quality overhaul that gave each business rule a single home.
         </p>
       </CaseSection>
 
-      <NextCase href="/work/talklab/" label="Next: TalkLab, oral exams at scale" />
+      <NextCase href="/work/talklab/" label="TalkLab case study" />
     </>
   );
 }

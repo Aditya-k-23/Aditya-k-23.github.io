@@ -23,8 +23,7 @@ export function Colophon() {
           </a>
         </div>
         <small>
-          © {new Date().getFullYear()} {site.name}. Set in Newsreader and Geist
-          Mono.
+          © {new Date().getFullYear()} {site.name}.
         </small>
       </div>
     </footer>

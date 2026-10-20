@@ -5,7 +5,7 @@ import { ExamDiagram } from "../../components/diagrams";
 export const metadata: Metadata = {
   title: "TalkLab",
   description:
-    "How Aditya Kulkarni built the platform behind TalkLab's AI oral exams, piloted with about 1,500 students at U of T Scarborough.",
+    "Aditya Kulkarni built most of the platform behind TalkLab's AI oral exams, piloted with about 1,500 students at U of T Scarborough.",
   alternates: { canonical: "/work/talklab/" },
 };
 
@@ -13,51 +13,41 @@ export default function TalkLab() {
   return (
     <>
       <CaseHead
-        notes={["TalkLab", "AI oral assessment", "Senior AI engineer and advisor"]}
-        title="Oral exams at the scale of a lecture hall."
-        lede="An oral exam is still the clearest way to find out whether someone understands something. It’s also the hardest to scale, because it happens one student at a time. TalkLab gives every student that conversation, with an AI asking the questions."
+        notes={["Senior AI engineer", "Advisor", "Since 2026"]}
+        title="TalkLab"
+        lede="TalkLab runs oral exams with an AI examiner, so every student in a large course can be assessed in conversation. I built most of the platform for its first pilot."
       />
 
-      <CaseSection notes={["Pilot", "U of T Scarborough", "~1,500 students"]}>
-        <h3>From prototype to a real course</h3>
+      <CaseSection
+        notes={["U of T Scarborough", "~1,500 students", "LiveKit, Deepgram, ElevenLabs, Azure OpenAI, AWS"]}
+      >
+        <h3>Pilot</h3>
         <p>
-          I built most of the platform behind the first pilot: the live voice
-          examiner, the scoring pipeline, and the tooling that lets an
-          instructor invite a whole course at once. Roughly 1,500 students took
-          part.
+          The pilot ran at U of T Scarborough with about 1,500 students. I built
+          the real-time voice examiner and the tools instructors use to enrol
+          and invite a whole course.
         </p>
         <ExamDiagram />
       </CaseSection>
 
-      <CaseSection notes={["Contracts"]}>
-        <h3>Grades that mean the same thing tomorrow</h3>
+      <CaseSection notes={["Continuous integration"]}>
+        <h3>Consistent grading</h3>
         <p>
-          An examiner and a scorer have to agree on what was asked. We treat
-          that agreement as a contract and test it on every change, so a prompt
-          tweak can&rsquo;t quietly change what a grade means.
+          The examiner and the scorer share a contract that&rsquo;s tested on
+          every change. A prompt update can&rsquo;t change what a grade measures
+          without the tests catching it.
         </p>
       </CaseSection>
 
-      <CaseSection
-        notes={["Voice", "LiveKit, Deepgram, ElevenLabs, Azure OpenAI, AWS"]}
-      >
-        <h3>Conversation in real time</h3>
+      <CaseSection notes={["Planned"]}>
+        <h3>Research</h3>
         <p>
-          In a spoken exam, silence reads as judgment. Keeping the examiner
-          quick isn&rsquo;t polish. It&rsquo;s part of grading fairly.
+          I&rsquo;m planning research on how students respond to an AI examiner
+          and what oral assessment needs to work at scale.
         </p>
       </CaseSection>
 
-      <CaseSection notes={["Research ahead"]}>
-        <h3>The questions it raises</h3>
-        <p>
-          Building the examiner left me with questions I want to answer
-          properly: how students respond to a machine asking the questions,
-          and what it takes for oral assessment to hold up at scale.
-        </p>
-      </CaseSection>
-
-      <NextCase href="/work/borderpass/" label="Next: BorderPass, immigration software" />
+      <NextCase href="/work/borderpass/" label="BorderPass case study" />
     </>
   );
 }

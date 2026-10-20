@@ -133,8 +133,8 @@ export function LunaDiagram() {
         <polygon points="38,26 30,22 30,30" className="dg-arrow key" />
       </svg>
       <figcaption>
-        The legal team asks and gets an answer. Engineering isn&rsquo;t a step
-        in the loop.
+        A question in plain English becomes a query, and the answer goes
+        back to the person who asked.
       </figcaption>
     </figure>
   );
@@ -182,8 +182,8 @@ export function ExamDiagram() {
         <path d="M200 284 H274 V226" className="dg-line key" strokeDasharray="3 4" />
       </svg>
       <figcaption>
-        The examiner and the scorer agree on what was asked, and that agreement
-        is tested, not assumed.
+        The examiner and the scorer share one contract, tested on every
+        change.
       </figcaption>
     </figure>
   );

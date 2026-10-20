@@ -20,8 +20,8 @@ export default function Research() {
         <div>
           <h1>Research</h1>
           <p className="lede">
-            I study how people learn computing, and how we measure it. Next, I
-            want to know what changes when the examiner is a model.
+            I research how people learn computing and how to assess it. My
+            papers have appeared at SIGCSE and ITiCSE.
           </p>
         </div>
       </section>
