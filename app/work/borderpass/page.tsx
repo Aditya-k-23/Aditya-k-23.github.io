@@ -5,7 +5,7 @@ import { LunaDiagram } from "../../components/diagrams";
 export const metadata: Metadata = {
   title: "BorderPass",
   description:
-    "Aditya Kulkarni leads an engineering team and owns the platform architecture at BorderPass, an immigration platform carrying 300+ visa cases a month.",
+    "Aditya Kulkarni leads an engineering team at BorderPass, an immigration platform carrying 300+ visa cases a month.",
   alternates: { canonical: "/work/borderpass/" },
 };
 
@@ -15,7 +15,7 @@ export default function BorderPass() {
       <CaseHead
         notes={["Software lead", "Joined May 2025", "Leading since Jan 2026"]}
         title="BorderPass"
-        lede="BorderPass is an immigration platform for people moving to Canada. Applicants prepare their files online and lawyers review them. I lead an engineering team and own the platform architecture."
+        lede="BorderPass is an immigration platform for people moving to Canada. Applicants prepare their files online and lawyers review them. I lead an engineering team building it."
       />
 
       <CaseSection notes={["Natural language to SQL"]}>
