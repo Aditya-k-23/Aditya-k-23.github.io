@@ -12,37 +12,34 @@ export default function Writing() {
   const posts = getPosts();
   return (
     <>
-      <section className="case-head row">
-        <div />
-        <div>
-          <h1>Writing</h1>
+      <section className="case-head grid">
+        <h1>Writing</h1>
           <p className="lede">
             Essays on applied AI, assessment and engineering.
           </p>
-        </div>
       </section>
-      <section className="block">
-        {posts.length === 0 ? (
-          <div className="row">
-            <div />
+      <section className="section grid">
+        <p className="label">Essays</p>
+        <div className="content">
+          {posts.length === 0 ? (
             <p>Nothing published yet.</p>
-          </div>
-        ) : (
-          posts.map((post) => (
-            <div className="row entry" key={post.slug}>
-              <div className="note">
-                <p>{formatDate(post.date)}</p>
-                {post.draft && <p>Draft</p>}
-              </div>
-              <div>
-                <h3>
-                  <Link href={`/writing/${post.slug}/`}>{post.title}</Link>
-                </h3>
-                <p>{post.summary}</p>
-              </div>
-            </div>
-          ))
-        )}
+          ) : (
+            <ul className="index papers">
+              {posts.map((post) => (
+                <li key={post.slug}>
+                  <Link href={`/writing/${post.slug}/`} className="item">
+                    <span className="title">{post.title}</span>
+                    <span className="venue">
+                      {formatDate(post.date)}
+                      {post.draft ? ", draft" : ""}
+                    </span>
+                    <span className="what">{post.summary}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
       </section>
     </>
   );

@@ -1,55 +1,50 @@
 import Link from "next/link";
 
 export function CaseHead({
-  notes,
   title,
   lede,
+  facts,
 }: {
-  notes: string[];
   title: string;
   lede: string;
+  facts: { label: string; value: string }[];
 }) {
   return (
-    <section className="case-head row">
-      <div className="note">
-        {notes.map((n) => (
-          <p key={n}>{n}</p>
+    <section className="case-head grid">
+      <h1>{title}</h1>
+      <p className="lede">{lede}</p>
+      <dl className="facts">
+        {facts.map((f) => (
+          <div key={f.label}>
+            <dt>{f.label}</dt>
+            <dd>{f.value}</dd>
+          </div>
         ))}
-      </div>
-      <div>
-        <h1>{title}</h1>
-        <p className="lede">{lede}</p>
-      </div>
+      </dl>
     </section>
   );
 }
 
 export function CaseSection({
-  notes,
+  label,
   children,
 }: {
-  notes: string[];
+  label: string;
   children: React.ReactNode;
 }) {
   return (
-    <section className="block row">
-      <div className="note">
-        {notes.map((n) => (
-          <p key={n}>{n}</p>
-        ))}
-      </div>
-      <div className="prose">{children}</div>
+    <section className="section grid case-section">
+      <p className="label">{label}</p>
+      <div className="content prose">{children}</div>
     </section>
   );
 }
 
 export function NextCase({ href, label }: { href: string; label: string }) {
   return (
-    <div className="row">
-      <div />
-      <p className="next-case">
-        <Link href={href}>{label}</Link>
-      </p>
+    <div className="next-case">
+      <span>Next</span>
+      <Link href={href}>{label}</Link>
     </div>
   );
 }

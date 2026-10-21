@@ -11,29 +11,24 @@ const links = [
 
 export function Colophon() {
   return (
-    <footer className="colophon row">
-      <div className="note">
-        <p>Toronto</p>
-      </div>
-      <div>
-        <ul className="icon-links">
-          {links.map(({ label, href, Icon, external }) => (
-            <li key={label}>
-              <a
-                href={href}
-                aria-label={label}
-                title={label}
-                {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-              >
-                <Icon aria-hidden="true" focusable="false" />
-              </a>
-            </li>
-          ))}
-        </ul>
-        <small>
-          © {new Date().getFullYear()} {site.name}.
-        </small>
-      </div>
+    <footer className="colophon">
+      <p>
+        © {new Date().getFullYear()} {site.name}, Toronto
+      </p>
+      <ul className="icon-links">
+        {links.map(({ label, href, Icon, external }) => (
+          <li key={label}>
+            <a
+              href={href}
+              aria-label={label}
+              title={label}
+              {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+            >
+              <Icon aria-hidden="true" focusable="false" />
+            </a>
+          </li>
+        ))}
+      </ul>
     </footer>
   );
 }

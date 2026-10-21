@@ -39,19 +39,18 @@ export default async function Post({
 
   return (
     <article>
-      <header className="case-head row">
-        <div className="note">
-          <p>{formatDate(post.date)}</p>
-          {post.draft && <p>Draft, not public</p>}
-        </div>
-        <div>
-          <h1>{post.title}</h1>
-          <p className="lede">{post.summary}</p>
-        </div>
+      <header className="case-head grid">
+        <h1>{post.title}</h1>
+        <p className="lede">{post.summary}</p>
+        <dl className="facts">
+          <div>
+            <dt>Published</dt>
+            <dd>{post.draft ? "Draft, not public" : formatDate(post.date)}</dd>
+          </div>
+        </dl>
       </header>
-      <section className="block row">
-        <div />
-        <div className="prose">
+      <section className="section grid">
+        <div className="content prose" style={{ gridColumn: "1 / span 8" }}>
           <CustomMDX source={post.content} />
         </div>
       </section>

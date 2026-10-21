@@ -13,13 +13,18 @@ export default function BorderPass() {
   return (
     <>
       <CaseHead
-        notes={["Software lead", "Joined May 2025", "Leading since Jan 2026"]}
         title="BorderPass"
-        lede="BorderPass is an immigration platform for people moving to Canada. Applicants prepare their files online and lawyers review them. I lead an engineering team building it."
+        lede="An immigration platform for people moving to Canada. Applicants prepare their files online and lawyers review them. I lead an engineering team building it."
+        facts={[
+          { label: "Role", value: "Software lead" },
+          { label: "Since", value: "May 2025" },
+          { label: "Visa cases", value: "300+ a month" },
+          { label: "Console load time", value: "−57% at p95" },
+        ]}
       />
 
-      <CaseSection notes={["Natural language to SQL"]}>
-        <h3>Luna and the agents console</h3>
+      <CaseSection label="Natural language to SQL">
+        <h2>Luna and the agents console</h2>
         <p>
           Luna turns plain-English questions into SQL over case data. With the
           agents console, it gives the legal team direct access to that data, so
@@ -28,12 +33,11 @@ export default function BorderPass() {
         <LunaDiagram />
       </CaseSection>
 
-      <CaseSection notes={["300+ cases a month", "Four lawyers", "−57% p95 load time"]}>
-        <h3>Platform</h3>
+      <CaseSection label="Platform">
+        <h2>Four lawyers, 300+ cases a month</h2>
         <p>
-          The platform lets four lawyers carry 300+ visa cases a month. I
-          rebuilt the legal console they work in and cut its p95 load time by
-          57%.
+          I rebuilt the legal console the lawyers work in and cut its p95 load
+          time by 57%.
         </p>
         <p>
           I set our strategy for hosting language models in Canada, so applicant
@@ -41,8 +45,8 @@ export default function BorderPass() {
         </p>
       </CaseSection>
 
-      <CaseSection notes={["In progress"]}>
-        <h3>Design pipeline</h3>
+      <CaseSection label="In progress">
+        <h2>Design pipeline</h2>
         <p>
           I&rsquo;m building a pipeline that turns a written flow spec into
           designs made from our component library. New visa flows start from
@@ -50,11 +54,8 @@ export default function BorderPass() {
         </p>
       </CaseSection>
 
-      <CaseSection notes={["Team lead", "60 organizations mapped"]}>
-        <h3>Leadership</h3>
-        <p>
-          Eight months after joining as an engineer, I was leading the team.
-        </p>
+      <CaseSection label="Leadership">
+        <h2>From engineer to team lead in eight months</h2>
         <p>
           My work reaches past engineering. I mapped 60 global mobility
           organizations, from relocation firms to AI-native startups, to show
@@ -62,7 +63,7 @@ export default function BorderPass() {
         </p>
       </CaseSection>
 
-      <NextCase href="/work/talklab/" label="TalkLab case study" />
+      <NextCase href="/work/talklab/" label="TalkLab" />
     </>
   );
 }

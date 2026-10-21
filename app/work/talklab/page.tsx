@@ -13,25 +13,28 @@ export default function TalkLab() {
   return (
     <>
       <CaseHead
-        notes={["Senior AI engineer", "Advisor", "Since 2026"]}
         title="TalkLab"
-        lede="TalkLab runs oral exams with an AI examiner, so every student in a large course can be assessed in conversation. I built the platform and took it from prototype to its first pilot."
+        lede="Oral exams run by an AI examiner, so every student in a large course can be assessed in conversation. I built the platform and took it from prototype to its first pilot."
+        facts={[
+          { label: "Role", value: "Senior AI engineer, advisor" },
+          { label: "Since", value: "2026" },
+          { label: "Pilot", value: "1,500 students" },
+          { label: "Where", value: "U of T Scarborough" },
+        ]}
       />
 
-      <CaseSection
-        notes={["U of T Scarborough", "1,500 students", "LiveKit, Deepgram, ElevenLabs, Azure OpenAI, AWS"]}
-      >
-        <h3>Pilot</h3>
+      <CaseSection label="Pilot">
+        <h2>A real-time voice examiner</h2>
         <p>
-          The pilot ran at U of T Scarborough with 1,500 students. I built
-          the real-time voice examiner and the tools instructors use to enrol
-          and invite a whole course.
+          I built the voice examiner students talk to, and the tools instructors
+          use to enrol and invite a whole course. It runs on LiveKit, Deepgram,
+          ElevenLabs, Azure OpenAI and AWS.
         </p>
         <ExamDiagram />
       </CaseSection>
 
-      <CaseSection notes={["Continuous integration"]}>
-        <h3>Consistent grading</h3>
+      <CaseSection label="Reliability">
+        <h2>Grading that holds steady</h2>
         <p>
           The examiner and the scorer share a contract that&rsquo;s tested on
           every change. A prompt update can&rsquo;t change what a grade measures
@@ -39,15 +42,15 @@ export default function TalkLab() {
         </p>
       </CaseSection>
 
-      <CaseSection notes={["Planned"]}>
-        <h3>Research</h3>
+      <CaseSection label="Next">
+        <h2>Research</h2>
         <p>
           I&rsquo;m planning research on how students respond to an AI examiner
           and what oral assessment needs to work at scale.
         </p>
       </CaseSection>
 
-      <NextCase href="/work/borderpass/" label="BorderPass case study" />
+      <NextCase href="/work/borderpass/" label="BorderPass" />
     </>
   );
 }
