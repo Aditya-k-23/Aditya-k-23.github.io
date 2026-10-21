@@ -33,7 +33,7 @@ export const roles: Role[] = [
     org: "BorderPass",
     area: "Mobility",
     href: "https://www.borderpass.ai/",
-    role: "Software lead",
+    role: "Engineering manager",
     since: "Since 2025",
     body: "An immigration platform where applicants prepare their files and lawyers review them. I lead an engineering team building the platform, which carries 300+ visa cases a month.",
     caseStudy: "/work/borderpass/",

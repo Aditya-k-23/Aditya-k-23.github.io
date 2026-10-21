@@ -5,7 +5,7 @@ import { LunaDiagram } from "../../components/diagrams";
 export const metadata: Metadata = {
   title: "BorderPass",
   description:
-    "Aditya Kulkarni leads an engineering team at BorderPass, an immigration platform carrying 300+ visa cases a month.",
+    "Aditya Kulkarni is an engineering manager at BorderPass, an immigration platform carrying 300+ visa cases a month.",
   alternates: { canonical: "/work/borderpass/" },
 };
 
@@ -16,7 +16,7 @@ export default function BorderPass() {
         title="BorderPass"
         lede="An immigration platform for people moving to Canada. Applicants prepare their files online and lawyers review them. I lead an engineering team building it."
         facts={[
-          { label: "Role", value: "Software lead" },
+          { label: "Role", value: "Engineering manager" },
           { label: "Since", value: "May 2025" },
           { label: "Visa cases", value: "300+ a month" },
           { label: "Console load time", value: "−57% at p95" },
@@ -55,7 +55,7 @@ export default function BorderPass() {
       </CaseSection>
 
       <CaseSection label="Leadership">
-        <h2>From engineer to team lead in eight months</h2>
+        <h2>From engineer to engineering manager</h2>
         <p>
           My work reaches past engineering. I mapped 60 global mobility
           organizations, from relocation firms to AI-native startups, to show

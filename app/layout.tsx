@@ -39,7 +39,7 @@ const personJsonLd = {
   "@type": "Person",
   name: site.name,
   url: site.url,
-  jobTitle: "Software lead",
+  jobTitle: "Engineering Manager",
   worksFor: { "@type": "Organization", name: "BorderPass" },
   alumniOf: { "@type": "CollegeOrUniversity", name: "University of Toronto" },
   sameAs: [site.links.linkedin, site.links.github, site.links.orcid],
