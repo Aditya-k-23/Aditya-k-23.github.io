@@ -14,8 +14,9 @@ export default function Research() {
       <section className="case-head grid">
         <h1>Research</h1>
         <p className="lede">
-          How people learn computing, and how to assess it fairly. My papers
-          have appeared at SIGCSE and ITiCSE.
+          How people learn computing, and how to assess it fairly. I&rsquo;m a
+          researcher at CAIR, the Conversational AI Research Group at U of T
+          Scarborough, and my papers have appeared at SIGCSE and ITiCSE.
         </p>
       </section>
 

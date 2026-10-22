@@ -48,12 +48,20 @@ export const roles: Role[] = [
     caseStudy: "/work/talklab/",
   },
   {
-    org: "University of Toronto",
+    org: "CAIR Lab",
+    area: "Research",
+    href: "https://www.linkedin.com/company/conversationalairesearchgroup/",
+    role: "Researcher",
+    since: "Since 2026",
+    body: "The Conversational AI Research Group at U of T Scarborough. With Prof. Brian Harrington, I study how people learn, and how they work with AI.",
+  },
+  {
+    org: "Data Sciences Institute, U of T",
     area: "Teaching",
     href: "https://datasciences.utoronto.ca/",
-    role: "Sessional instructor",
+    role: "Instructor",
     since: "Ongoing",
-    body: "I teach machine learning at the Data Sciences Institute.",
+    body: "I teach the Deploying AI bootcamp.",
   },
 ];
 

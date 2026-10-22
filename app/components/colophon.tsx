@@ -9,12 +9,8 @@ const links = [
   { label: "Résumé", href: site.links.resume, Icon: FaFileLines, external: true },
 ];
 
-export function Colophon() {
+export function SocialLinks() {
   return (
-    <footer className="colophon">
-      <p>
-        © {new Date().getFullYear()} {site.name}, Toronto
-      </p>
       <ul className="icon-links">
         {links.map(({ label, href, Icon, external }) => (
           <li key={label}>
@@ -29,6 +25,16 @@ export function Colophon() {
           </li>
         ))}
       </ul>
+  );
+}
+
+export function Colophon() {
+  return (
+    <footer className="colophon">
+      <p>
+        © {new Date().getFullYear()} {site.name}, Toronto
+      </p>
+      <SocialLinks />
     </footer>
   );
 }

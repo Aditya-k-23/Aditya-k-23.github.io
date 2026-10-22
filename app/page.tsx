@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { roles, publications, paperGloss, site } from "../lib/site";
+import { roles, publications } from "../lib/site";
+import { SocialLinks } from "./components/colophon";
 import { getPosts, formatDate } from "../lib/posts";
 
 export default function Home() {
@@ -7,21 +8,44 @@ export default function Home() {
 
   return (
     <>
-      <section className="hero grid" aria-labelledby="hero-title">
-        <h1 id="hero-title">
-          Fostering resilience, enabling freedom.
-        </h1>
+      <section className="intro" aria-labelledby="hero-title">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/adi.webp"
           alt="Portrait of Aditya Kulkarni"
-          className="portrait"
-          width={176}
-          height={220}
+          className="avatar"
+          width={208}
+          height={208}
         />
-        <p className="sub">
-          Engineering manager at BorderPass. Building TalkLab.
-        </p>
+        <div className="intro-text">
+          <h1 id="hero-title">Hi, I&rsquo;m Adi.</h1>
+          <p className="role">Engineering manager and AI researcher</p>
+          <p className="bio">
+            I&rsquo;m an engineering manager at{" "}
+            <a href="https://www.borderpass.ai/" target="_blank" rel="noopener noreferrer">
+              BorderPass
+            </a>
+            , where we help people move to Canada. I also built the platform
+            behind{" "}
+            <a href="https://demo.talklab.ca/" target="_blank" rel="noopener noreferrer">
+              TalkLab
+            </a>
+            &rsquo;s AI oral exams, research with{" "}
+            <a
+              href="https://www.linkedin.com/company/conversationalairesearchgroup/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CAIR
+            </a>{" "}
+            at U of T Scarborough, and teach the Deploying AI bootcamp at the{" "}
+            <a href="https://datasciences.utoronto.ca/" target="_blank" rel="noopener noreferrer">
+              Data Sciences Institute
+            </a>
+            .
+          </p>
+          <SocialLinks />
+        </div>
       </section>
 
       <section className="section grid" id="work" aria-labelledby="work-title">
@@ -64,9 +88,6 @@ export default function Home() {
           Research
         </h2>
         <div className="content">
-          <p className="intro">
-            How people learn computing, and how to assess it fairly.
-          </p>
           <ul className="index papers">
             {publications.map((p) => (
               <li key={p.doi}>
@@ -75,7 +96,6 @@ export default function Home() {
                   <span className="venue num">
                     {p.venue} {p.year}
                   </span>
-                  <span className="what">{paperGloss[p.year]}</span>
                 </a>
               </li>
             ))}
@@ -107,18 +127,6 @@ export default function Home() {
         </section>
       )}
 
-      <section className="section grid contact" id="contact" aria-labelledby="contact-title">
-        <h2 className="label" id="contact-title">
-          Contact
-        </h2>
-        <div className="content">
-          <p>
-            If you&rsquo;re building in mobility, education or AI, I&rsquo;d
-            like to hear about it.{" "}
-            <a href={`mailto:${site.email}`}>{site.email}</a>
-          </p>
-        </div>
-      </section>
     </>
   );
 }

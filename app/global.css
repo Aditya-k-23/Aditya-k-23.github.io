@@ -198,6 +198,59 @@ a:hover {
   letter-spacing: -0.01em;
 }
 
+/* ---------- Intro: direct, like a hello ---------- */
+.intro {
+  display: grid;
+  grid-template-columns: 13rem minmax(0, 1fr);
+  gap: 3.5rem;
+  align-items: center;
+  padding-block: clamp(3rem, 2rem + 5vw, 6.5rem) clamp(2.5rem, 1.5rem + 4vw, 5rem);
+}
+.avatar {
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 30%;
+  filter: grayscale(1) contrast(1.04);
+}
+.intro h1 {
+  font-size: clamp(2.6rem, 1.6rem + 3.2vw, 4.25rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+}
+.intro .role {
+  margin-top: 0.75rem;
+  font-size: clamp(1.15rem, 1rem + 0.5vw, 1.4rem);
+  color: var(--muted);
+  letter-spacing: -0.01em;
+}
+.intro .bio {
+  margin-top: 1.5rem;
+  max-width: 36em;
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: var(--ink-2);
+}
+.intro .bio a {
+  color: var(--ink);
+  text-decoration-color: var(--muted);
+}
+.intro .icon-links {
+  margin: 1.25rem 0 0 -0.6rem;
+}
+@media (max-width: 640px) {
+  .intro {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.75rem;
+  }
+  .avatar {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
 /* ---------- Sections ---------- */
 .section {
   padding-block: 3.5rem;
