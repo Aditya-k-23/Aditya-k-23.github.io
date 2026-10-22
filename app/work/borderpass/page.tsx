@@ -34,13 +34,12 @@ export default function BorderPass() {
         <LunaDiagram />
       </CaseSection>
 
-      <CaseSection label="Agent harness">
-        <h2>AI that designs on our terms</h2>
+      <CaseSection label="Design tooling">
+        <h2>An AI-first design tool for product flows</h2>
         <p>
-          I&rsquo;m building a harness that turns a written visa-flow spec into
-          designs made from our own component library. Designers direct it by
-          prompting, and the AI follows BorderPass&rsquo;s rules instead of a
-          generic model&rsquo;s defaults.
+          I&rsquo;m building an AI-first tool for designing product flows.
+          Designers describe a flow by prompting, and it produces designs built
+          from our own component library, ready for handoff to engineering.
         </p>
       </CaseSection>
 
