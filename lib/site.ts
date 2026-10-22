@@ -56,12 +56,12 @@ export const roles: Role[] = [
     body: "The Conversational AI Research Group at U of T Scarborough. With Prof. Brian Harrington, I study how people learn, and how they work with AI.",
   },
   {
-    org: "Data Sciences Institute, U of T",
+    org: "Data Sciences Institute",
     area: "Teaching",
     href: "https://datasciences.utoronto.ca/",
-    role: "Instructor",
+    role: "Instructor, U of T",
     since: "Ongoing",
-    body: "I teach the Deploying AI bootcamp.",
+    body: "I support courses across Unix, Git, regression, classification, and AI product development and deployment.",
   },
 ];
 
