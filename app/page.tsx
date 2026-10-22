@@ -19,36 +19,23 @@ export default function Home() {
         />
         <div className="intro-text">
           <h1 id="hero-title">Hi, I&rsquo;m Adi.</h1>
-          <p className="role">Engineering manager and AI researcher</p>
-          <div className="bio">
-            <p>
-              I&rsquo;m passionate about building products, fostering
-              resilience, enabling freedom of all kinds.
-            </p>
-            <p>
-              Currently, I am an Engineering Manager at{" "}
-              <a href="https://www.borderpass.ai/" target="_blank" rel="noopener noreferrer">
-                BorderPass
-              </a>
-              , where I build AI first legal tech solutions to enable global
-              mobility.
-            </p>
-            <p>
-              At{" "}
-              <a href="https://demo.talklab.ca/" target="_blank" rel="noopener noreferrer">
-                TalkLab
-              </a>
-              , I am a Senior AI Researcher building tools for conducting
-              assessments at scale.
-            </p>
-            <p>
-              At the{" "}
-              <a href="https://datasciences.utoronto.ca/" target="_blank" rel="noopener noreferrer">
-                Data Sciences Institute @ UofT
-              </a>
-              , I teach building and deploying AI/ML solutions.
-            </p>
-          </div>
+          <p className="role">Building with resilience, for freedom.</p>
+          <p className="bio">
+            I lead engineering at{" "}
+            <a href="https://www.borderpass.ai/" target="_blank" rel="noopener noreferrer">
+              BorderPass
+            </a>
+            , where we&rsquo;re using AI to make global mobility simpler. At{" "}
+            <a href="https://demo.talklab.ca/" target="_blank" rel="noopener noreferrer">
+              TalkLab
+            </a>
+            , I build AI that assesses what people know through conversation.
+            And at U of T&rsquo;s{" "}
+            <a href="https://datasciences.utoronto.ca/" target="_blank" rel="noopener noreferrer">
+              Data Sciences Institute
+            </a>
+            , I teach engineers to ship AI that holds up in the real world.
+          </p>
           <SocialLinks />
         </div>
       </section>
