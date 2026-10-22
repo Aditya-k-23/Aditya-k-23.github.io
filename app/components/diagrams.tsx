@@ -59,7 +59,7 @@ function Box({
         y={y}
         width={w}
         height={h}
-        rx={3}
+        rx={14}
         className={keyed ? "dg-box key" : "dg-box"}
       />
       <text
