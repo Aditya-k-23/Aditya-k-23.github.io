@@ -42,11 +42,12 @@ export default function TalkLab() {
         </p>
       </CaseSection>
 
-      <CaseSection label="Next">
-        <h2>Research</h2>
+      <CaseSection label="Research">
+        <h2>How people behave with AI</h2>
         <p>
-          I&rsquo;m planning research on how students respond to an AI examiner
-          and what oral assessment needs to work at scale.
+          We&rsquo;re researching how people behave with AI systems, and how to
+          reliably assess those interactions across every kind of interface:
+          voice, video and text.
         </p>
       </CaseSection>
 
