@@ -233,6 +233,9 @@ a:hover {
   line-height: 1.65;
   color: var(--ink-2);
 }
+.intro .bio p + p {
+  margin-top: 0.75rem;
+}
 .intro .bio a {
   color: var(--ink);
   text-decoration-color: var(--muted);

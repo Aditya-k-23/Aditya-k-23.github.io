@@ -16,7 +16,7 @@ export default function TalkLab() {
         title="TalkLab"
         lede="Oral exams run by an AI examiner, so every student in a large course can be assessed in conversation. I built the platform and took it from prototype to its first pilot."
         facts={[
-          { label: "Role", value: "Senior AI engineer, advisor" },
+          { label: "Role", value: "Senior AI researcher" },
           { label: "Since", value: "2026" },
           { label: "Pilot", value: "1,500 students" },
           { label: "Where", value: "U of T Scarborough" },

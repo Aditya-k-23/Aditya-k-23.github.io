@@ -42,7 +42,7 @@ export const roles: Role[] = [
     org: "TalkLab",
     area: "Learning",
     href: "https://demo.talklab.ca/",
-    role: "Senior AI engineer and advisor",
+    role: "Senior AI researcher",
     since: "Since 2026",
     body: "Oral exams run by an AI examiner. I built the platform and took it from prototype to a 1,500-student pilot at U of T Scarborough.",
     caseStudy: "/work/talklab/",
