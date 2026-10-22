@@ -1,17 +1,22 @@
-# Portfolio Website
+# adityakulkarni.me
 
-[![CodeFactor](https://www.codefactor.io/repository/github/aditya-k-23/aditya-k-23.github.io/badge)](https://www.codefactor.io/repository/github/aditya-k-23/aditya-k-23.github.io)
+Personal site of Aditya Kulkarni. Next.js (App Router) exported as static HTML and deployed to GitHub Pages by `.github/workflows/nextjs.yml` on every push to `main`.
 
-Made with ❤️ by Aditya Kulkarni
+## Run it
 
-## Getting Started
+```
+pnpm install
+pnpm dev      # http://localhost:3000, drafts visible
+pnpm build    # static site in out/
+```
 
-`pnpm install` to install all the dependencies.
+## Where things live
 
-`pnpm run dev` to start the development server.
+- `lib/site.ts` holds every public fact: roles, publications, talks, recognition, links. Edit copy here first.
+- `app/work/borderpass` and `app/work/talklab` are the case studies. Each gets one diagram from `app/components/diagrams.tsx`.
+- `content/writing/*.mdx` are essays. Frontmatter: `title`, `date`, `summary`, `draft`. Drafts only show in `pnpm dev`. The Writing link appears once one essay is public.
+- `app/global.css` holds the design tokens (paper, ink, stamp blue) and the margin-note grid.
 
-`npm run build` to build the project for production.
+## Public disclosure rule
 
-## License
-
-This project is licensed under the MIT License
+Name systems at the capability level, with numbers and scale. No internal architecture.

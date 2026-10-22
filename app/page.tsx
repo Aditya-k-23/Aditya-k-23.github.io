@@ -1,53 +1,125 @@
-import Image from "next/image";
+import Link from "next/link";
+import { roles, publications } from "../lib/site";
+import { SocialLinks } from "./components/colophon";
+import { getPosts, formatDate } from "../lib/posts";
 
-export default function Page() {
+export default function Home() {
+  const posts = getPosts().slice(0, 3);
+
   return (
-    <section>
-      <h1 className="mb-4 text-2xl font-semibold tracking-tighter">
-        👋 Hello! I&apos;m Adi
-      </h1>
-      <p className="mb-6 text-lg text-neutral-600 dark:text-neutral-400">
-        Software Engineer & CS Educator
-      </p>
-      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-        <Image
+    <>
+      <section className="intro" aria-labelledby="hero-title">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           src="/adi.webp"
-          alt="Aditya Profile Picture"
-          className="relative rounded-full object-cover flex-shrink-0"
-          height={200}
-          width={200}
+          alt="Portrait of Aditya Kulkarni"
+          className="avatar"
+          width={208}
+          height={208}
         />
-        <div className="mb-4 space-y-3">
-          <p>
-            I&apos;m a computer science graduate from the{" "}
-            <a
-              href="https://www.utoronto.ca/"
-              className="underline hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors"
-            >
-              University of Toronto
-            </a>
-            , passionate about building impactful products that improve
-            people&apos;s lives.
-          </p>
-          <p>
-            Currently, I&apos;m a software engineer at{" "}
-            <a
-              href="https://www.borderpass.ai/"
-              className="underline hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors"
-            >
+        <div className="intro-text">
+          <h1 id="hero-title">Hi, I&rsquo;m Adi.</h1>
+          <p className="role">Building with resilience, for freedom.</p>
+          <p className="bio">
+            I lead an engineering team at{" "}
+            <a href="https://www.borderpass.ai/" target="_blank" rel="noopener noreferrer">
               BorderPass
-            </a>{" "}
-            and teach at the{" "}
-            <a
-              href="https://datasciences.utoronto.ca/"
-              className="underline hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors"
-            >
-              UofT Data Sciences Institute
             </a>
-            .
+            {" "}where we build legal tech to empower global mobility. At{" "}
+            <a href="https://demo.talklab.ca/" target="_blank" rel="noopener noreferrer">
+              TalkLab
+            </a>
+            , I build AI that assesses what people know through conversation.
+            And at U of T&rsquo;s{" "}
+            <a href="https://datasciences.utoronto.ca/" target="_blank" rel="noopener noreferrer">
+              Data Sciences Institute
+            </a>
+            , I teach learners to build and ship AI/ML products that hold up in
+            the real world.
+          </p>
+          <SocialLinks />
+        </div>
+      </section>
+
+      <section className="section grid" id="work" aria-labelledby="work-title">
+        <h2 className="label" id="work-title">
+          Now
+        </h2>
+        <div className="content">
+          <ul className="index">
+            {roles.map((r) => {
+              const inner = (
+                <>
+                  <span className="name">
+                    {r.org}
+                    <span className="meta">{r.role}</span>
+                  </span>
+                  <span className="what">
+                    {r.body}
+                    {r.caseStudy && <span className="go">Case study</span>}
+                  </span>
+                </>
+              );
+              return (
+                <li key={r.org}>
+                  {r.caseStudy ? (
+                    <Link href={r.caseStudy} className="item">
+                      {inner}
+                    </Link>
+                  ) : (
+                    <div className="item">{inner}</div>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </section>
+
+      <section className="section grid" aria-labelledby="research-title">
+        <h2 className="label" id="research-title">
+          Research
+        </h2>
+        <div className="content">
+          <ul className="index papers">
+            {publications.map((p) => (
+              <li key={p.doi}>
+                <a href={p.doi} target="_blank" rel="noopener noreferrer" className="item">
+                  <span className="title">{p.title}</span>
+                  <span className="venue num">
+                    {p.venue} {p.year}
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+          <p className="more">
+            <Link href="/research/">Abstracts, posters and recognition</Link>
           </p>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {posts.length > 0 && (
+        <section className="section grid" aria-labelledby="writing-title">
+          <h2 className="label" id="writing-title">
+            Writing
+          </h2>
+          <div className="content">
+            <ul className="index papers">
+              {posts.map((post) => (
+                <li key={post.slug}>
+                  <Link href={`/writing/${post.slug}/`} className="item">
+                    <span className="title">{post.title}</span>
+                    <span className="venue">{formatDate(post.date)}</span>
+                    <span className="what">{post.summary}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
+    </>
   );
 }

@@ -1,0 +1,30 @@
+---
+title: "How to publish an essay on this site"
+date: "2026-10-19"
+summary: "A template. Drafts like this one only show up when running locally."
+draft: true
+---
+
+Add a file to `content/writing/` named after the URL you want, for example
+`content/writing/oral-exams-at-scale.mdx`. It becomes `/writing/oral-exams-at-scale/`.
+
+Start it with frontmatter:
+
+```
+---
+title: "Your title"
+date: "2026-11-02"
+summary: "One sentence that shows up under the title and in link previews."
+draft: true
+---
+```
+
+Keep `draft: true` while you work; it shows up on `pnpm dev` and nowhere else.
+Delete that line to publish. The Writing link appears in the navigation and on
+the home page as soon as one essay is public.
+
+### What renders
+
+Headings, lists, links, `inline code`, code blocks and block quotes:
+
+> An answer you can't check is just a confident guess.
