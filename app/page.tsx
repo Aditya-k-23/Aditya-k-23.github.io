@@ -9,8 +9,7 @@ export default function Home() {
     <>
       <section className="hero grid" aria-labelledby="hero-title">
         <h1 id="hero-title">
-          I build technology that gives people freedom over their time, money,
-          location and effort.
+          I build ways out.
         </h1>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -21,9 +20,10 @@ export default function Home() {
           height={220}
         />
         <p className="sub">
-          I want the people who use it to come out more resilient, adaptable
-          and enterprising. Right now that means immigration at BorderPass, AI
-          oral exams at TalkLab, and research on how people learn.
+          Out of paperwork, borders and wasted hours.
+          <span className="now">
+            Engineering manager at BorderPass. Building TalkLab.
+          </span>
         </p>
       </section>
 

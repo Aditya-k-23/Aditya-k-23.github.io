@@ -8,7 +8,7 @@ export const site = {
   url: "https://adityakulkarni.me",
   email: "adityaskulkarni23@gmail.com",
   description:
-    "Aditya Kulkarni builds technology that gives people freedom over their time, money, location and effort: immigration software at BorderPass, AI oral exams at TalkLab, and research on how people learn.",
+    "Aditya Kulkarni builds ways out of paperwork, borders and wasted hours. Engineering manager at BorderPass, building TalkLab.",
   links: {
     github: "https://github.com/Aditya-k-23",
     linkedin: "https://www.linkedin.com/in/aditya-s-kulkarni/",
