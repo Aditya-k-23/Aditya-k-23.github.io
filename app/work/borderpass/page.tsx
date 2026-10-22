@@ -5,7 +5,7 @@ import { LunaDiagram } from "../../components/diagrams";
 export const metadata: Metadata = {
   title: "BorderPass",
   description:
-    "Aditya Kulkarni leads an engineering team at BorderPass, building the AI inside an immigration platform that carries 300+ visa cases a month.",
+    "Aditya Kulkarni leads an engineering team at BorderPass, a multi-jurisdictional, AI-first global mobility platform carrying 300+ visa cases a month.",
   alternates: { canonical: "/work/borderpass/" },
 };
 
@@ -14,12 +14,12 @@ export default function BorderPass() {
     <>
       <CaseHead
         title="BorderPass"
-        lede="AI-first legal tech for global mobility. Applicants prepare their visa files online and lawyers review them. I lead the engineering team building the AI inside it."
+        lede="AI-first legal tech for global mobility, built to work across jurisdictions. Applicants prepare their visa files online and lawyers review them. I lead the engineering team building the AI inside it."
         facts={[
           { label: "Role", value: "Engineering manager" },
           { label: "Since", value: "May 2025" },
           { label: "Visa cases", value: "300+ a month" },
-          { label: "Applicant data", value: "Stays in Canada" },
+          { label: "Scope", value: "Multi-jurisdictional" },
         ]}
       />
 
@@ -44,12 +44,12 @@ export default function BorderPass() {
         </p>
       </CaseSection>
 
-      <CaseSection label="Model hosting">
-        <h2>Language models, hosted in Canada</h2>
+      <CaseSection label="Global visas">
+        <h2>One platform, many jurisdictions</h2>
         <p>
-          I set our strategy for hosting language models in Canada. Applicants
-          share passports and immigration histories, so their data never leaves
-          the country, even when a model reads it.
+          I built the global visas architecture that lets BorderPass take on a
+          new country&rsquo;s visas without rebuilding the product. It&rsquo;s
+          the foundation of our scale-up beyond a single jurisdiction.
         </p>
       </CaseSection>
 

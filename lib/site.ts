@@ -35,7 +35,7 @@ export const roles: Role[] = [
     href: "https://www.borderpass.ai/",
     role: "Engineering manager",
     since: "Since 2025",
-    body: "AI-first legal tech for global mobility. My team builds the AI inside it: plain-English answers over case data, agent tooling for the legal team, and a harness that turns visa-flow specs into designs.",
+    body: "AI-first legal tech for global mobility, built across jurisdictions. I built its global visas architecture, and my team builds the AI inside it, from plain-English answers over case data to a harness that turns visa-flow specs into designs.",
     caseStudy: "/work/borderpass/",
   },
   {
