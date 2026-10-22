@@ -21,11 +21,11 @@ export default function Home() {
           <h1 id="hero-title">Hi, I&rsquo;m Adi.</h1>
           <p className="role">Building with resilience, for freedom.</p>
           <p className="bio">
-            I lead engineering at{" "}
+            I lead an engineering team at{" "}
             <a href="https://www.borderpass.ai/" target="_blank" rel="noopener noreferrer">
               BorderPass
             </a>
-            , where we&rsquo;re using AI to make global mobility simpler. At{" "}
+            {" "}where we build legal tech to empower global mobility. At{" "}
             <a href="https://demo.talklab.ca/" target="_blank" rel="noopener noreferrer">
               TalkLab
             </a>
@@ -34,7 +34,8 @@ export default function Home() {
             <a href="https://datasciences.utoronto.ca/" target="_blank" rel="noopener noreferrer">
               Data Sciences Institute
             </a>
-            , I teach engineers to ship AI that holds up in the real world.
+            , I teach learners to build and ship AI/ML products that hold up in
+            the real world.
           </p>
           <SocialLinks />
         </div>
