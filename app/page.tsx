@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <section className="hero grid" aria-labelledby="hero-title">
         <h1 id="hero-title">
-          Freedom begs resilience.
+          Fostering resilience, enabling freedom.
         </h1>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -20,10 +20,7 @@ export default function Home() {
           height={220}
         />
         <p className="sub">
-          I build software that grants the first and trains the second.
-          <span className="now">
-            Engineering manager at BorderPass. Building TalkLab.
-          </span>
+          Engineering manager at BorderPass. Building TalkLab.
         </p>
       </section>
 

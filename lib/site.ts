@@ -8,7 +8,7 @@ export const site = {
   url: "https://adityakulkarni.me",
   email: "adityaskulkarni23@gmail.com",
   description:
-    "Freedom begs resilience. Aditya Kulkarni builds software that grants the first and trains the second. Engineering manager at BorderPass, building TalkLab.",
+    "Fostering resilience, enabling freedom. Aditya Kulkarni is an engineering manager at BorderPass and is building TalkLab.",
   links: {
     github: "https://github.com/Aditya-k-23",
     linkedin: "https://www.linkedin.com/in/aditya-s-kulkarni/",
