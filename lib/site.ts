@@ -35,7 +35,7 @@ export const roles: Role[] = [
     href: "https://www.borderpass.ai/",
     role: "Engineering manager",
     since: "Since 2025",
-    body: "An immigration platform where applicants prepare their files and lawyers review them. I lead an engineering team building the platform, which carries 300+ visa cases a month.",
+    body: "AI-first legal tech for global mobility. My team builds the AI inside it: plain-English answers over case data, agent tooling for the legal team, and a harness that turns visa-flow specs into designs.",
     caseStudy: "/work/borderpass/",
   },
   {
@@ -118,20 +118,29 @@ export const paperGloss: Record<string, string> = {
 
 export const talks = [
   {
-    title: "Voices of CMS podcast, with Prof. Brian Harrington",
+    title: "Voices of CMS, with Prof. Brian Harrington",
+    kind: "Podcast",
     url: "https://www.youtube.com/watch?v=7lY16KvM2M8",
   },
   {
-    title: "Voices of CMS podcast, with Prof. Kathleen Smith",
+    title: "Voices of CMS, with Prof. Kathleen Smith",
+    kind: "Podcast",
     url: "https://www.youtube.com/watch?v=rPqYNHLfSWk",
   },
   {
-    title: "Voices of CMS podcast, with Prof. Sotirios Damouras",
+    title: "Voices of CMS, with Prof. Sotirios Damouras",
+    kind: "Podcast",
     url: "https://www.youtube.com/watch?v=bT_L6cMBj40",
   },
   {
-    title: "DS3 Datathon, AI ethics panel",
+    title: "AI ethics panel, DS3 Datathon",
+    kind: "Panel",
     url: "https://www.youtube.com/watch?v=VEJsijYmVk0",
+  },
+  {
+    title: "Pelicula, a movie recommendation engine",
+    kind: "Demo",
+    url: "https://www.youtube.com/watch?v=tI23EmhWCGc",
   },
 ];
 

@@ -9,6 +9,7 @@ export function Masthead({ hasWriting }: { hasWriting: boolean }) {
   const items = [
     { href: "/#work", label: "Work", match: "/work" },
     { href: "/research/", label: "Research", match: "/research" },
+    { href: "/talks/", label: "Talks", match: "/talks" },
     ...(hasWriting
       ? [{ href: "/writing/", label: "Writing", match: "/writing" }]
       : []),

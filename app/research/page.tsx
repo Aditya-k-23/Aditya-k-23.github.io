@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { publications, talks, recognition } from "../../lib/site";
+import { publications, recognition } from "../../lib/site";
 
 export const metadata: Metadata = {
   title: "Research",
   description:
-    "Aditya Kulkarni's peer-reviewed research in computing education (SIGCSE, ITiCSE), talks, and recognition.",
+    "Aditya Kulkarni's peer-reviewed research in computing education (SIGCSE, ITiCSE), and recognition.",
   alternates: { canonical: "/research/" },
 };
 
@@ -48,23 +48,6 @@ export default function Research() {
                     )}
                   </span>
                 </div>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      <section className="section grid" aria-labelledby="talks">
-        <h2 className="label" id="talks">
-          Talks
-        </h2>
-        <div className="content">
-          <ul className="plain-list single">
-            {talks.map((t) => (
-              <li key={t.url}>
-                <a href={t.url} target="_blank" rel="noopener noreferrer">
-                  {t.title}
-                </a>
               </li>
             ))}
           </ul>

@@ -94,7 +94,7 @@ export default function Home() {
             ))}
           </ul>
           <p className="more">
-            <Link href="/research/">Abstracts, posters, talks and recognition</Link>
+            <Link href="/research/">Abstracts, posters and recognition</Link>
           </p>
         </div>
       </section>

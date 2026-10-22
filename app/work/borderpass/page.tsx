@@ -5,7 +5,7 @@ import { LunaDiagram } from "../../components/diagrams";
 export const metadata: Metadata = {
   title: "BorderPass",
   description:
-    "Aditya Kulkarni is an engineering manager at BorderPass, an immigration platform carrying 300+ visa cases a month.",
+    "Aditya Kulkarni leads an engineering team at BorderPass, building the AI inside an immigration platform that carries 300+ visa cases a month.",
   alternates: { canonical: "/work/borderpass/" },
 };
 
@@ -14,23 +14,43 @@ export default function BorderPass() {
     <>
       <CaseHead
         title="BorderPass"
-        lede="An immigration platform for people moving to Canada. Applicants prepare their files online and lawyers review them. I lead an engineering team building it."
+        lede="AI-first legal tech for global mobility. Applicants prepare their visa files online and lawyers review them. I lead the engineering team building the AI inside it."
         facts={[
           { label: "Role", value: "Engineering manager" },
           { label: "Since", value: "May 2025" },
           { label: "Visa cases", value: "300+ a month" },
-          { label: "Console load time", value: "−57% at p95" },
+          { label: "Applicant data", value: "Stays in Canada" },
         ]}
       />
 
       <CaseSection label="Natural language to SQL">
-        <h2>Luna and the agents console</h2>
+        <h2>Luna: case data in plain English</h2>
         <p>
-          Luna turns plain-English questions into SQL over case data. With the
-          agents console, it gives the legal team direct access to that data, so
-          they get answers without filing a request with engineering.
+          Luna turns a plain-English question into SQL over live case data and
+          returns the answer. Together with our agents console, it gives the
+          legal team direct access to their own data, with no engineer in the
+          loop.
         </p>
         <LunaDiagram />
+      </CaseSection>
+
+      <CaseSection label="Agent harness">
+        <h2>AI that designs on our terms</h2>
+        <p>
+          I&rsquo;m building a harness that turns a written visa-flow spec into
+          designs made from our own component library. Designers direct it by
+          prompting, and the AI follows BorderPass&rsquo;s rules instead of a
+          generic model&rsquo;s defaults.
+        </p>
+      </CaseSection>
+
+      <CaseSection label="Model hosting">
+        <h2>Language models, hosted in Canada</h2>
+        <p>
+          I set our strategy for hosting language models in Canada. Applicants
+          share passports and immigration histories, so their data never leaves
+          the country, even when a model reads it.
+        </p>
       </CaseSection>
 
       <CaseSection label="Platform">
@@ -38,19 +58,6 @@ export default function BorderPass() {
         <p>
           I rebuilt the legal console the lawyers work in and cut its p95 load
           time by 57%.
-        </p>
-        <p>
-          I set our strategy for hosting language models in Canada, so applicant
-          data stays in the country.
-        </p>
-      </CaseSection>
-
-      <CaseSection label="In progress">
-        <h2>Design pipeline</h2>
-        <p>
-          I&rsquo;m building a pipeline that turns a written flow spec into
-          designs made from our component library. New visa flows start from
-          the design system instead of a blank canvas.
         </p>
       </CaseSection>
 
